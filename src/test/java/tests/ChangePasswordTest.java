@@ -53,9 +53,10 @@ public class ChangePasswordTest {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Change Password")
     public void VerifyChangingPasswordSuccessfully(){
-        driver              .assertThat().element(changePasswordPage.getChagePasswordTitleLocator()).text().contains(testData.getTestData("UserInfo.ChangePasswordTitle"));
         changePasswordPage  .openChangePasswordPage();
-
+        driver              .assertThat().element(changePasswordPage.getChagePasswordTitleLocator()).text().contains(testData.getTestData("UserInfo.ChangePasswordTitle"));
+        changePasswordPage  .changePassword(testData.getTestData("UserInfo.Password"), testData.getTestData("UserInfo.NewPassword"));
+        driver              .assertThat().element(changePasswordPage.getPasswordChangedMsgLocator()).text().contains(testData.getTestData("messages.PasswordChangedMsg"));
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\

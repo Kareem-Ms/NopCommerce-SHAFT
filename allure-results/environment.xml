@@ -42,7 +42,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket50099 @w@C:\Users\usama\AppData\Local\Temp\idea_working_dirs_testng.tmp -temp C:\Users\usama\AppData\Local\Temp\idea_testng.tmp</value>
+    <value>com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket56322 @w@C:\Users\usama\AppData\Local\Temp\idea_working_dirs_testng.tmp -temp C:\Users\usama\AppData\Local\Temp\idea_testng.tmp</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -122,7 +122,7 @@
   </parameter>
   <parameter>
     <key>java.library.path</key>
-    <value>C:\Users\usama\.jdks\openjdk-20\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\xampp\php;C:\Users\usama\composer.phar;C:\Users\usama\composer-setup;;C:\WINDOWS\System32\OpenSSH\;C:\Users\usama\AppData\Local\Microsoft\WindowsApps;;C:\Users\usama\AppData\Local\Programs\Microsoft VS Code\bin;.</value>
+    <value>C:\Users\usama\.jdks\openjdk-20\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\xampp\php;C:\Users\usama\composer.phar;C:\Users\usama\composer-setup;C:\WINDOWS\System32\OpenSSH\;C:\Users\usama\AppData\Local\Programs\Git\bin\;C:\Users\usama\AppData\Local\Programs\Git\cmd\;C:\Users\usama\AppData\Local\Microsoft\WindowsApps;C:\Users\usama\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\usama\AppData\Local\Programs\Git\cmd;.</value>
   </parameter>
   <parameter>
     <key>CUCUMBER_PUBLISH_ENABLED</key>
