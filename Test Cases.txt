@@ -1,0 +1,44 @@
+Test Cases:
+-------------
+
+-Verify registering user by filling required data
+1-Navigate to register page "https://demo.nopcommerce.com/register?returnUrl=%2F"
+2-Verify that register title appears
+3-Fill in the fields of (First name, Last name, Email, Password, Confirmation password) then click on Rgister button
+4-Verify that "Your registration completed" title appears
+5-Click on Continue button
+6-Verify that home page appears
+
+-Verify registering by using already existing email
+1-Do the same steps for registering with unregistered email
+2-Navigate to register page "https://demo.nopcommerce.com/register?returnUrl=%2F"
+3-Verify that register title appears
+4-Fill in the fields of (First name, Last name, Email, Password, Confirmation password) then click on Rgister button
+5-Verify that the title contains "email already exists"
+
+
+-Verify login with correct email and password
+1-Do the same steps of register
+2-Navigate to login page "https://demo.nopcommerce.com/login?returnUrl=%2F"
+3-Verify that "Welcome, Please Sign In!" title appears
+4-Enter registered email and password
+5-click on "LOG IN" button
+6-Verify My account link appear above
+
+-Verify changing password to another one
+1-do the same steps for register 
+2-do the same steps for login 
+3-navigate to change password page "https://demo.nopcommerce.com/customer/changepassword"
+4-Verify that "My account - Change password" title appear
+5-Fill in the fields of Old password , New password , Confirm password
+6-click on Change password button
+7-Verify that "Password was changed" message appear above
+
+
+-Verify searching for specific product by its complete name
+1-Navigate to home page "https://demo.nopcommerce.com/"
+2-click on the searchbar above
+3-type in the first 5 letters of specific product
+4-click on search button
+5-Verify that the product name appear as a card
+
