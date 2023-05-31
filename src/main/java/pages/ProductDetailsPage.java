@@ -15,6 +15,9 @@ public class ProductDetailsPage {
 
     /////////////////Locators\\\\\\\\\\\\\\\\\\
     By ProductTitleLocator = By.className("product-name");
+    By AddProductToWishList = By.id("add-to-wishlist-button-4");
+    By ProductAddedConfirmationLocator = By.className("success");
+    By whishListLinkLocator = By.cssSelector("p.content > a");
 
 
     /////////////////Actions\\\\\\\\\\\\\\\\\\\
@@ -28,5 +31,18 @@ public class ProductDetailsPage {
     public By getProductTitleLocator(){
         return ProductTitleLocator;
     }
+
+    public void addProductToWishList(){
+        driver.element().click(AddProductToWishList);
+    }
+
+    public By getProductAddedConfirmationLocator(){
+        return ProductAddedConfirmationLocator;
+    }
+
+    public void openWishList(){
+        driver.element().click(whishListLinkLocator);
+    }
+
 
 }

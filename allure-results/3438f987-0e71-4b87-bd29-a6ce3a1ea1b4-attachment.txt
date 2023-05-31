@@ -1,0 +1,12 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 2' test cases in the current suite                                        
+                                            Test Method: 'tests.WishListTest.searchForProductByName'                                            
+                             Test Description: 'Verify Searching for specific product and viewing it's product page'                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Type "MacBook" into "Search store". @28-05-2023 16:12:12.0689 PM
+[ReportManager] Moved the mouse to the middle of the element. @28-05-2023 16:12:12.0907 PM
+[ReportManager] Click "SEARCH". @28-05-2023 16:12:12.0993 PM
+[ReportManager] Moved the mouse to the middle of the element. @28-05-2023 16:12:16.0100 PM
+[ReportManager] Click "Apple MacBook Pro 13-inch". @28-05-2023 16:12:16.0160 PM

@@ -1,0 +1,10 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 2' test cases in the current suite                                        
+                                         Test Method: 'tests.WishListTest.verifyAddingProductToWishlist'                                         
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Moved the mouse to the middle of the element. @28-05-2023 16:12:17.0746 PM
+[ReportManager] Click "Add to wishlist". @28-05-2023 16:12:17.0780 PM
+[ReportManager] Moved the mouse to the middle of the element. @28-05-2023 16:12:18.0526 PM
+[ReportManager] Click "wishlist". @28-05-2023 16:12:18.0568 PM
