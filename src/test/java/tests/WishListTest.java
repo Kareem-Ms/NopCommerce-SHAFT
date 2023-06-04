@@ -26,14 +26,18 @@ public class WishListTest {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Search for product")
     public void searchForProductByName(){
-        ProductName = testData.getTestData(testData.getTestData("info.ProductName"));
+        ProductName = testData.getTestData("info.ProductName");
 
+        System.out.println("hi"+ProductName);
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
         driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName);
     }
 
-    @Test(dependsOnMethods = "searchForProductByName")
+
+    @Test(dependsOnMethods = "searchForProductByName", description = "Verify adding product for the wishlist")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Add product to wishlist")
     public void verifyAddingProductToWishlist(){
         productDetailsPage  .addProductToWishList();
         driver              .assertThat().element(productDetailsPage.getProductAddedConfirmationLocator()).text().contains(testData.getTestData("messages.prdouctAdded")).perform();

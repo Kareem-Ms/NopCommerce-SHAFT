@@ -1,0 +1,14 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 2' test cases in the current suite                                        
+                                            Test Method: 'tests.WishListTest.searchForProductByName'                                            
+                             Test Description: 'Verify Searching for specific product and viewing it's product page'                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/WishListTestData.json"". @04-06-2023 07:26:09.0083 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/WishListTestData.json"". @04-06-2023 07:26:09.0084 AM
+[ReportManager] Type "MacBook" into "Search store". @04-06-2023 07:26:10.0164 AM
+[ReportManager] Moved the mouse to the middle of the element. @04-06-2023 07:26:10.0366 AM
+[ReportManager] Click "SEARCH". @04-06-2023 07:26:10.0456 AM
+[ReportManager] Moved the mouse to the middle of the element. @04-06-2023 07:26:12.0599 AM
+[ReportManager] Click "Apple MacBook Pro 13-inch". @04-06-2023 07:26:12.0672 AM
