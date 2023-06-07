@@ -15,9 +15,27 @@ public class WishListPage {
 
     /////////////////Locators\\\\\\\\\\\\\\\\\\
 
+
     /////////////////Actions\\\\\\\\\\\\\\\\\\\
     public By getProductLinkLocator(String ProductName){
         return By.xpath("//a[@class = 'product-name' ] [contains(text() , '"+ProductName+"')]");
     }
+
+    public void removeProductFromWishList(String ProductName){
+        String removeProductBtnXpath = "//a[@class = 'product-name' ] [contains(text() , '"+ProductName+"')]/parent::td//following-sibling::td[@class = 'remove-from-cart']//button";
+        driver.element().click(By.xpath(removeProductBtnXpath));
+    }
+
+    public boolean isProductExistInWishList(String ProductName){
+        boolean flag;
+        if(driver.element().isElementDisplayed(getProductLinkLocator(ProductName))){
+            flag = true;
+        }
+        else {
+            flag = false;
+        }
+        return flag;
+    }
+
 
 }
