@@ -1,0 +1,35 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '4 out of 4' test cases in the current suite                                        
+                                     Test Method: 'tests.ProductReviewTest.addProductReviewByRegisteredUser'                                     
+                                     Test Description: 'Verify adding product review for a registered user'                                     
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Moved the mouse to the middle of the element. @07-06-2023 12:20:16.0952 PM
+[ReportManager] Click "Add your review". @07-06-2023 12:20:16.0991 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:16.0992 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:16.0992 PM
+[ReportManager] Get text "Write your own review" from "By.cssSelector: #review-form >div.title". @07-06-2023 12:20:17.0458 PM
+[ReportManager] Expected "own review", and actual "Write your own review" @07-06-2023 12:20:17.0459 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'own review' for the 'text' attribute, element locator 'By.cssSelector: #review-form >div.title'" and Actual "Write your own review". Comparison Type "CONTAINS". Validation Type "POSITIVE". @07-06-2023 12:20:17.0901 PM
+[ReportManager] Assertion Passed: The Element located by "By.cssSelector: #review-form >div.title" text contains "own review". @07-06-2023 12:20:17.0902 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1686133217632_addProductReviewByRegisteredUser_ValidateElementAttribute_passed' @07-06-2023 12:20:17.0903 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:17.0904 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:17.0904 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:17.0919 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:17.0920 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:17.0933 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:17.0934 PM
+[ReportManager] Type "own review" into "Review title:". @07-06-2023 12:20:18.0064 PM
+[ReportManager] Type "This product is really a good one" into "Review text:". @07-06-2023 12:20:18.0203 PM
+[ReportManager] Moved the mouse to the middle of the element. @07-06-2023 12:20:18.0372 PM
+[ReportManager] Click "Good". @07-06-2023 12:20:18.0409 PM
+[ReportManager] Moved the mouse to the middle of the element. @07-06-2023 12:20:18.0581 PM
+[ReportManager] Click "SUBMIT REVIEW". @07-06-2023 12:20:18.0616 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:18.0617 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @07-06-2023 12:20:18.0618 PM
+[ReportManager] Get text "Product review is successfully added." from "By.cssSelector: div.page-body > div.result". @07-06-2023 12:20:19.0057 PM
+[ReportManager] Expected "review is successfully added.", and actual "Product review is successfully added." @07-06-2023 12:20:19.0058 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'review is successfully added.' for the 'text' attribute, element locator 'By.cssSelector: div.page-body > div.result'" and Actual "Product review is successfully added.". Comparison Type "CONTAINS". Validation Type "POSITIVE". @07-06-2023 12:20:19.0475 PM
+[ReportManager] Assertion Passed: The Element located by "By.cssSelector: div.page-body > div.result" text contains "review is successfully added.". @07-06-2023 12:20:19.0475 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1686133219245_addProductReviewByRegisteredUser_ValidateElementAttribute_passed' @07-06-2023 12:20:19.0477 PM

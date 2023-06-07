@@ -28,7 +28,6 @@ public class WishListTest {
     public void searchForProductByName(){
         ProductName = testData.getTestData("info.ProductName");
 
-        System.out.println("hi"+ProductName);
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
         driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName);
@@ -41,7 +40,7 @@ public class WishListTest {
     public void verifyAddingProductToWishlist(){
         productDetailsPage  .addProductToWishList();
         driver              .assertThat().element(productDetailsPage.getProductAddedConfirmationLocator()).text().contains(testData.getTestData("messages.prdouctAdded")).perform();
-        productDetailsPage  .openWishList();
+        wishListPage        .openWishListPage();
         driver              .assertThat().element(wishListPage.getProductLinkLocator(ProductName)).text().contains(testData.getTestData("info.ProductName")).perform();
     }
 
