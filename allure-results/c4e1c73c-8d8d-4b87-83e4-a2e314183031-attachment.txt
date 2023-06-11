@@ -1,0 +1,13 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                       Starting Execution: '11 out of 15' test cases in the current suite                                       
+                                       Test Method: 'tests.WishListTest.verifyDeletingProductFromWishList'                                       
+                                    Test Description: 'Verify deleting product from wishlist after adding it'                                    
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Moved the mouse to the middle of the element. @11-06-2023 09:42:41.0706 AM
+[ReportManager] Click "By.xpath: //a[@class = 'product-name' ] [contains(text() , 'MacBook')]/parent::td//following-sibling::td[@class = 'remove-from-cart']//button". @11-06-2023 09:42:41.0738 AM
+[ReportManager] Expected condition failed: waiting for com.shaft.gui.element.internal.ElementActionsHelper$$Lambda$1055/0x000000080162b7b0@3791a16c (tried for 60 second(s) with 100 milliseconds interval) || no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class = 'product-name' ] [contains(text() , 'MacBook')]"} @11-06-2023 09:43:42.0205 AM
+[ReportManager] Assertion "ValidateElementExists" PASSED. Expected "Element Should not Exist, locator 'By.xpath: //a[@class = 'product-name' ] [contains(text() , 'MacBook')]'" and Actual "Element Doesn't Exists". Comparison Type "EQUALS". Validation Type "NEGATIVE". @11-06-2023 09:43:42.0617 AM
+[ReportManager] Assertion Passed: The Element located by "By.xpath: //a[@class = 'product-name' ] [contains(text() , 'MacBook')]" does not exist. @11-06-2023 09:43:42.0617 AM
+[ReportManager] Successfully created attachment 'Screenshot - 1686469422304_verifyDeletingProductFromWishList_ValidateElementExists_passed' @11-06-2023 09:43:42.0619 AM

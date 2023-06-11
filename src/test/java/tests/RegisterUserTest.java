@@ -7,6 +7,7 @@ import io.qameta.allure.Story;
 import org.testng.annotations.*;
 import pages.RegisterPage;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class RegisterUserTest {
 
@@ -15,7 +16,7 @@ public class RegisterUserTest {
     SHAFT.TestData.JSON testData;
     RegisterPage registerPage;
     String email;
-    String currentTime = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+    String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
 
 
 

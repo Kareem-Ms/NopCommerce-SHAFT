@@ -1,0 +1,14 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '8 out of 15' test cases in the current suite                                        
+                                             Test Method: 'tests.SearchTest.searchForProductByName'                                             
+                             Test Description: 'Verify Searching for specific product and viewing it's product page'                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/SearchTestData.json"". @11-06-2023 09:42:10.0573 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/SearchTestData.json"". @11-06-2023 09:42:10.0573 AM
+[ReportManager] Type "MacBook" into "Search store". @11-06-2023 09:42:10.0750 AM
+[ReportManager] Moved the mouse to the middle of the element. @11-06-2023 09:42:10.0931 AM
+[ReportManager] Click "SEARCH". @11-06-2023 09:42:10.0999 AM
+[ReportManager] Moved the mouse to the middle of the element. @11-06-2023 09:42:12.0544 AM
+[ReportManager] Click "Apple MacBook Pro 13-inch". @11-06-2023 09:42:12.0587 AM

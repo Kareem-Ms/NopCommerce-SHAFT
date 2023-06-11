@@ -1,0 +1,6 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                       Starting Execution: '11 out of 15' test cases in the current suite                                       
+                                       Test Method: 'tests.WishListTest.verifyDeletingProductFromWishList'                                       
+                                    Test Description: 'Verify deleting product from wishlist after adding it'                                    
+------------------------------------------------------------------------------------------------------------------------------------------------

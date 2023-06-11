@@ -1,0 +1,48 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                       Starting Execution: '14 out of 15' test cases in the current suite                                       
+                                      Test Method: 'tests.ProductReviewTest.loginWithValidEmailAndPassword'                                      
+                                      Test Description: 'Validate Login with registered email and password'                                      
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Target URL: "https://demo.nopcommerce.com/login" @11-06-2023 09:43:35.0175 AM
+[ReportManager] Initial URL: "https://demo.nopcommerce.com/apple-macbook-pro-13-inch" @11-06-2023 09:43:35.0203 AM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/login". @11-06-2023 09:43:35.0752 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @11-06-2023 09:43:35.0752 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @11-06-2023 09:43:35.0752 AM
+[ReportManager] Type "johndoe_11062023094114268@gmail.com" into "Email:". @11-06-2023 09:43:35.0901 AM
+[ReportManager] Type "tester123" into "Password:". @11-06-2023 09:43:36.0006 AM
+[ReportManager] Moved the mouse to the middle of the element. @11-06-2023 09:43:36.0187 AM
+[ReportManager] Click "LOG IN". @11-06-2023 09:43:36.0232 AM
+[ReportManager] Attempting to getAttribute "hidden" from elementLocator "By.className: ico-account". @11-06-2023 09:43:36.0903 AM
+[ReportManager] Get attribute from "My account". @11-06-2023 09:43:36.0954 AM
+[ReportManager] Expected "null", and actual "null" @11-06-2023 09:43:36.0955 AM
+[ReportManager] java.lang.UnsatisfiedLinkError: 'long org.opencv.core.Mat.n_Mat()'
+ org.opencv.core.Mat.n_Mat(Native Method)
+ org.opencv.core.Mat.<init>(Mat.java:23)
+ org.opencv.core.MatOfByte.<init>(MatOfByte.java:12)
+ com.shaft.gui.internal.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:338)
+ com.shaft.gui.internal.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:151)
+ com.shaft.validation.internal.ValidationsHelper.reportValidationState(ValidationsHelper.java:609)
+ com.shaft.validation.internal.ValidationsHelper.pass(ValidationsHelper.java:373)
+ com.shaft.validation.internal.ValidationsHelper.reportValidationResultOfElementAttribute(ValidationsHelper.java:488)
+ com.shaft.validation.internal.ValidationsHelper.validateElementAttribute(ValidationsHelper.java:178)
+ com.shaft.validation.internal.ValidationsExecutor.perform(ValidationsExecutor.java:149)
+ tests.ProductReviewTest.loginWithValidEmailAndPassword(ProductReviewTest.java:48)
+ java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+ java.base/java.lang.reflect.Method.invoke(Method.java:578)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+ org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+ org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+ org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+ org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623) @11-06-2023 09:43:36.0955 AM
+[ReportManager] Caught an UnsatisfiedLinkError, switching element highlighting method to JavaScript instead of AI. @11-06-2023 09:43:36.0955 AM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.className: ico-account'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE". @11-06-2023 09:43:38.0152 AM
+[ReportManager] Assertion Passed: The Element located by "By.className: ico-account" is visible, hidden attribute is equal to "null". @11-06-2023 09:43:38.0152 AM
+[ReportManager] Successfully created attachment 'Screenshot - 1686469417411_loginWithValidEmailAndPassword_ValidateElementAttribute_passed' @11-06-2023 09:43:38.0158 AM

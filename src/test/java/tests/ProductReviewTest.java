@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import pages.*;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ProductReviewTest {
 
@@ -22,7 +23,7 @@ public class ProductReviewTest {
     LoginPage loginPage;
     RegisterPage registerPage;
     String email;
-    String currentTime = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+    String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
     @Test(description = "Validate registering a user with valid email and password")
@@ -46,6 +47,7 @@ public class ProductReviewTest {
         loginPage       .login(email, testData.getTestData("UserInfo.Password"));
         driver          .assertThat().element(homePage.getMyAccountLinkLocator()).isVisible().perform();
     }
+
     @Test(description = "Verify Searching for specific product and viewing it's product page")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Search for product")
@@ -85,4 +87,3 @@ public class ProductReviewTest {
     }
 
 }
-

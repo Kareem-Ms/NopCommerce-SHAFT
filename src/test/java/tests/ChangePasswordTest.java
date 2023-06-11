@@ -13,6 +13,7 @@ import pages.LoginPage;
 import pages.RegisterPage;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ChangePasswordTest {
 
@@ -24,7 +25,7 @@ public class ChangePasswordTest {
     HomePage homePage;
     ChangePasswordPage changePasswordPage;
     String email;
-    String currentTime = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+    String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
     @Test(description = "Validate registering a user with valid email and password")

@@ -1,0 +1,23 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '7 out of 15' test cases in the current suite                                        
+                                   Test Method: 'tests.ChangePasswordTest.VerifyChangingPasswordSuccessfully'                                   
+                                       Test Description: 'Validate changing account password to a new one'                                       
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Target URL: "https://demo.nopcommerce.com/customer\changepassword" @11-06-2023 09:42:13.0783 AM
+[ReportManager] Initial URL: "https://demo.nopcommerce.com" @11-06-2023 09:42:13.0800 AM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/customer\changepassword". @11-06-2023 09:42:14.0167 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ChangePasswordTestData.json"". @11-06-2023 09:42:14.0168 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ChangePasswordTestData.json"". @11-06-2023 09:42:14.0168 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ChangePasswordTestData.json"". @11-06-2023 09:42:14.0190 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ChangePasswordTestData.json"". @11-06-2023 09:42:14.0191 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ChangePasswordTestData.json"". @11-06-2023 09:42:14.0208 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ChangePasswordTestData.json"". @11-06-2023 09:42:14.0209 AM
+[ReportManager] Type "tester123" into "Old password:". @11-06-2023 09:42:14.0335 AM
+[ReportManager] Type "tester1234" into "New password:". @11-06-2023 09:42:14.0463 AM
+[ReportManager] Type "tester1234" into "Confirm password:". @11-06-2023 09:42:14.0607 AM
+[ReportManager] Moved the mouse to the middle of the element. @11-06-2023 09:42:14.0777 AM
+[ReportManager] Click "CHANGE PASSWORD". @11-06-2023 09:42:14.0829 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ChangePasswordTestData.json"". @11-06-2023 09:42:14.0830 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ChangePasswordTestData.json"". @11-06-2023 09:42:14.0830 AM

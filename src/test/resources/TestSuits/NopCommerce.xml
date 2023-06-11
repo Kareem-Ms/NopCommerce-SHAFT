@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NopCommerce test">
+
+    <test name="NopCommerce - GUI" thread-count="3" preserve-order="true"  parallel = "classes">
+        <classes>
+            <class name="tests.RegisterUserTest"/>
+            <class name="tests.LoginTest"/>
+            <class name="tests.ChangePasswordTest"/>
+            <class name="tests.SearchTest"/>
+            <class name="tests.WishListTest"/>
+            <class name="tests.ProductReviewTest"/>
+        </classes>
+    </test> <!-- PHPTRAVELS - GUI -->
+
+</suite> <!-- Automation Practice -->

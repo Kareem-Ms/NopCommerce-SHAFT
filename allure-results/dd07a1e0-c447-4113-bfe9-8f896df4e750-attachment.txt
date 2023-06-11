@@ -1,0 +1,11 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                       Starting Execution: '10 out of 15' test cases in the current suite                                       
+                                         Test Method: 'tests.WishListTest.verifyAddingProductToWishlist'                                         
+                                           Test Description: 'Verify adding product for the wishlist'                                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Expected condition failed: waiting for com.shaft.gui.element.internal.ElementActionsHelper$$Lambda$1053/0x000000080163cb68@b8ed597 (tried for 60 second(s) with 100 milliseconds interval) || no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-wishlist\-button\-4"} @11-06-2023 09:43:21.0363 AM
+[ReportManager] Failed to Click "By.id: add-to-wishlist-button-4". Root cause: "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-wishlist\-button\-4"}" @11-06-2023 09:43:22.0417 AM
+[ReportManager] Successfully created attachment 'Screenshot - 1686469401719_verifyAddingProductToWishlist_Click_failed' @11-06-2023 09:43:22.0423 AM
+[ReportManager] Successfully created attachment 'Element Action Exception - Click - Stacktrace' @11-06-2023 09:43:22.0424 AM

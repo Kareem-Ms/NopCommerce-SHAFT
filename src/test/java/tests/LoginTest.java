@@ -12,6 +12,7 @@ import pages.LoginPage;
 import pages.RegisterPage;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class LoginTest {
 
@@ -22,7 +23,7 @@ public class LoginTest {
     LoginPage loginPage;
     HomePage homePage;
     String email;
-    String currentTime = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+   String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
 
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\

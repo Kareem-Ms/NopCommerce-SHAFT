@@ -1,0 +1,26 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                       Starting Execution: '10 out of 15' test cases in the current suite                                       
+                                         Test Method: 'tests.WishListTest.verifyAddingProductToWishlist'                                         
+                                           Test Description: 'Verify adding product for the wishlist'                                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Moved the mouse to the middle of the element. @11-06-2023 09:42:38.0291 AM
+[ReportManager] Click "Add to wishlist". @11-06-2023 09:42:38.0370 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/WishListTestData.json"". @11-06-2023 09:42:38.0371 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/WishListTestData.json"". @11-06-2023 09:42:38.0371 AM
+[ReportManager] Get text "The product has been added to your wishlist" from "By.className: success". @11-06-2023 09:42:38.0995 AM
+[ReportManager] Expected "product has been added", and actual "The product has been added to your wishlist" @11-06-2023 09:42:38.0995 AM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'product has been added' for the 'text' attribute, element locator 'By.className: success'" and Actual "The product has been added to your wishlist". Comparison Type "CONTAINS". Validation Type "POSITIVE". @11-06-2023 09:42:39.0940 AM
+[ReportManager] Assertion Passed: The Element located by "By.className: success" text contains "product has been added". @11-06-2023 09:42:39.0940 AM
+[ReportManager] Successfully created attachment 'Screenshot - 1686469359318_verifyAddingProductToWishlist_ValidateElementAttribute_passed' @11-06-2023 09:42:39.0945 AM
+[ReportManager] Target URL: "https://demo.nopcommerce.com/wishlist" @11-06-2023 09:42:39.0966 AM
+[ReportManager] Initial URL: "https://demo.nopcommerce.com/apple-macbook-pro-13-inch" @11-06-2023 09:42:39.0986 AM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/wishlist". @11-06-2023 09:42:40.0980 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/WishListTestData.json"". @11-06-2023 09:42:40.0980 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/WishListTestData.json"". @11-06-2023 09:42:40.0980 AM
+[ReportManager] Get text "Apple MacBook Pro 13-inch" from "Apple MacBook Pro 13-inch". @11-06-2023 09:42:41.0061 AM
+[ReportManager] Expected "MacBook", and actual "Apple MacBook Pro 13-inch" @11-06-2023 09:42:41.0061 AM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'MacBook' for the 'text' attribute, element locator 'By.xpath: //a[@class = 'product-name' ] [contains(text() , 'MacBook')]'" and Actual "Apple MacBook Pro 13-inch". Comparison Type "CONTAINS". Validation Type "POSITIVE". @11-06-2023 09:42:41.0518 AM
+[ReportManager] Assertion Passed: The Element located by "By.xpath: //a[@class = 'product-name' ] [contains(text() , 'MacBook')]" text contains "MacBook". @11-06-2023 09:42:41.0518 AM
+[ReportManager] Successfully created attachment 'Screenshot - 1686469361257_verifyAddingProductToWishlist_ValidateElementAttribute_passed' @11-06-2023 09:42:41.0520 AM
