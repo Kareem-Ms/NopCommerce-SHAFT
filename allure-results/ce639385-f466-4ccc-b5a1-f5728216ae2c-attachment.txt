@@ -1,0 +1,22 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 2' test cases in the current suite                                        
+                                          Test Method: 'tests.LoginTest.loginWithValidEmailAndPassword'                                          
+                                      Test Description: 'Validate Login with registered email and password'                                      
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Target URL: "https://demo.nopcommerce.com/login" @01-06-2023 21:57:07.0403 PM
+[ReportManager] Initial URL: "https://demo.nopcommerce.com" @01-06-2023 21:57:07.0451 PM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/login". @01-06-2023 21:57:07.0896 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"". @01-06-2023 21:57:07.0896 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"". @01-06-2023 21:57:07.0896 PM
+[ReportManager] Type "johndoe_2023.06.01.21.56.45@gmail.com" into "Email:". @01-06-2023 21:57:08.0174 PM
+[ReportManager] Type "tester123" into "Password:". @01-06-2023 21:57:08.0422 PM
+[ReportManager] Moved the mouse to the middle of the element. @01-06-2023 21:57:08.0649 PM
+[ReportManager] Click "LOG IN". @01-06-2023 21:57:08.0722 PM
+[ReportManager] Attempting to getAttribute "hidden" from elementLocator "By.className: ico-account". @01-06-2023 21:57:09.0441 PM
+[ReportManager] Get attribute from "My account". @01-06-2023 21:57:09.0528 PM
+[ReportManager] Expected "null", and actual "null" @01-06-2023 21:57:09.0528 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.className: ico-account'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE". @01-06-2023 21:57:13.0209 PM
+[ReportManager] Assertion Passed: The Element located by "By.className: ico-account" is visible, hidden attribute is equal to "null". @01-06-2023 21:57:13.0209 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1685649430649_loginWithValidEmailAndPassword_ValidateElementAttribute_passed' @01-06-2023 21:57:13.0242 PM
