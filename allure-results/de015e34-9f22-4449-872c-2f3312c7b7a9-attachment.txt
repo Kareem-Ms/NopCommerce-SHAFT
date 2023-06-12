@@ -1,0 +1,243 @@
+[INFO ] 2023-06-12 20:21:17.358 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                      Powered by SHAFT Engine v7.2.20230527                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-12 20:21:20.704 [main] ReportManager - Loaded OpenCV "opencv_java470".
+[INFO ] 2023-06-12 20:21:20.704 [main] ReportManager - File Action "DeleteFolder" successfully performed. With the following test data "Target Folder: "execution-summary"".
+[INFO ] 2023-06-12 20:21:20.704 [main] ReportManager - Initializing Allure Reporting Environment...
+[INFO ] 2023-06-12 20:21:21.201 [main] ReportManager - Initializing Extent Reporting Environment...
+[INFO ] 2023-06-12 20:21:23.154 [main] Utils - [TestNG] Running:
+  C:\Users\kemo\AppData\Local\JetBrains\IntelliJIdea2021.2\temp-testng-customsuite.xml
+
+[INFO ] 2023-06-12 20:21:23.201 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of suite setup configuration method                                             
+                                          'com.shaft.listeners.internal.ConfigurationHelper.suiteSetup'                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-12 20:21:23.579 [main] ReportManager - Initializing Important Links...
+[INFO ] 2023-06-12 20:21:23.595 [main] ReportManager - Initializing Properties...
+[INFO ] 2023-06-12 20:21:23.767 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                Starting execution of set up configuration method                                                
+                                                             'tests.LoginTest.setUp'                                                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-12 20:21:23.798 [main] ReportManager - Setting "targetOperatingSystem" property with "WINDOWS".
+[INFO ] 2023-06-12 20:21:23.798 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2023-06-12 20:21:23.798 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2023-06-12 20:21:23.814 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2023-06-12 20:21:23.814 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2023-06-12 20:21:23.814 [main] ReportManager - Attempting to run locally on: "WINDOWS | Chrome".
+[INFO ] 2023-06-12 20:21:23.829 [main] ReportManager - Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time...
+[DEBUG] 2023-06-12 20:21:24.684 [main] ResolutionCache - Removing resolution chrome=114 from cache (expired on 2023-06-11T21:33:12.000+0200)
+[DEBUG] 2023-06-12 20:21:24.716 [main] InternalHttpClient - ex-0000000001 preparing request execution
+[DEBUG] 2023-06-12 20:21:24.731 [main] ProtocolExec - ex-0000000001 target auth state: UNCHALLENGED
+[DEBUG] 2023-06-12 20:21:24.731 [main] ProtocolExec - ex-0000000001 proxy auth state: UNCHALLENGED
+[DEBUG] 2023-06-12 20:21:24.731 [main] ConnectExec - ex-0000000001 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2023-06-12 20:21:24.731 [main] InternalHttpClient - ex-0000000001 acquiring endpoint (3 MINUTES)
+[DEBUG] 2023-06-12 20:21:24.731 [main] PoolingHttpClientConnectionManager - ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+[DEBUG] 2023-06-12 20:21:24.778 [main] PoolingHttpClientConnectionManager - ex-0000000001 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2023-06-12 20:21:24.810 [main] PoolingHttpClientConnectionManager - ex-0000000001 acquired ep-0000000001
+[DEBUG] 2023-06-12 20:21:24.810 [main] InternalHttpClient - ex-0000000001 acquired endpoint ep-0000000001
+[DEBUG] 2023-06-12 20:21:24.810 [main] ConnectExec - ex-0000000001 opening connection {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2023-06-12 20:21:24.810 [main] InternalHttpClient - ep-0000000001 connecting endpoint (null)
+[DEBUG] 2023-06-12 20:21:24.810 [main] PoolingHttpClientConnectionManager - ep-0000000001 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+[DEBUG] 2023-06-12 20:21:24.810 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolving remote address
+[DEBUG] 2023-06-12 20:21:24.857 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/185.199.109.133, raw.githubusercontent.com/185.199.111.133, raw.githubusercontent.com/185.199.108.133]
+[DEBUG] 2023-06-12 20:21:24.872 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com:443 connecting null->raw.githubusercontent.com/185.199.110.133:443 (30 SECONDS)
+[DEBUG] 2023-06-12 20:21:24.872 [main] SSLConnectionSocketFactory - Connecting socket to raw.githubusercontent.com/185.199.110.133:443 with timeout 30 SECONDS
+[DEBUG] 2023-06-12 20:21:25.125 [main] SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+[DEBUG] 2023-06-12 20:21:25.126 [main] SSLConnectionSocketFactory - Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[DEBUG] 2023-06-12 20:21:25.126 [main] SSLConnectionSocketFactory - Starting handshake (null)
+[DEBUG] 2023-06-12 20:21:25.215 [main] SSLConnectionSocketFactory - Secure session established
+[DEBUG] 2023-06-12 20:21:25.215 [main] SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+[DEBUG] 2023-06-12 20:21:25.215 [main] SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+[DEBUG] 2023-06-12 20:21:25.215 [main] SSLConnectionSocketFactory -  peer principal: CN=*.github.io, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+[DEBUG] 2023-06-12 20:21:25.215 [main] SSLConnectionSocketFactory -  peer alternative names: [*.github.io, github.io, *.github.com, github.com, www.github.com, *.githubusercontent.com, githubusercontent.com]
+[DEBUG] 2023-06-12 20:21:25.215 [main] SSLConnectionSocketFactory -  issuer principal: CN=DigiCert TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+[DEBUG] 2023-06-12 20:21:25.215 [main] DefaultManagedHttpClientConnection - http-outgoing-0 set socket timeout to 3 MINUTES
+[DEBUG] 2023-06-12 20:21:25.215 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com:443 connected null->raw.githubusercontent.com/185.199.110.133:443 as http-outgoing-0
+[DEBUG] 2023-06-12 20:21:25.215 [main] PoolingHttpClientConnectionManager - ep-0000000001 connected http-outgoing-0
+[DEBUG] 2023-06-12 20:21:25.215 [main] InternalHttpClient - ep-0000000001 endpoint connected
+[DEBUG] 2023-06-12 20:21:25.215 [main] MainClientExec - ex-0000000001 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2023-06-12 20:21:25.215 [main] RequestAddCookies - ex-0000000001 Cookie spec selected: strict
+[DEBUG] 2023-06-12 20:21:25.231 [main] InternalHttpClient - ep-0000000001 start execution ex-0000000001
+[DEBUG] 2023-06-12 20:21:25.231 [main] PoolingHttpClientConnectionManager - ep-0000000001 executing exchange ex-0000000001 over http-outgoing-0
+[DEBUG] 2023-06-12 20:21:25.231 [main] headers - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2023-06-12 20:21:25.231 [main] headers - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+[DEBUG] 2023-06-12 20:21:25.231 [main] headers - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+[DEBUG] 2023-06-12 20:21:25.231 [main] headers - http-outgoing-0 >> cache-control: max-age=0
+[DEBUG] 2023-06-12 20:21:25.231 [main] headers - http-outgoing-0 >> connection: keep-alive
+[DEBUG] 2023-06-12 20:21:25.231 [main] headers - http-outgoing-0 >> Host: raw.githubusercontent.com
+[DEBUG] 2023-06-12 20:21:25.231 [main] wire - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.231 [main] wire - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.231 [main] wire - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.231 [main] wire - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.231 [main] wire - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.231 [main] wire - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.231 [main] wire - http-outgoing-0 >> "[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Content-Length: 723[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "ETag: W/"e82b438271e9e8680c688b0b680efd0bdd22faa6d6f0a32fc1fd8accc486b67e"[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "X-GitHub-Request-Id: 5178:0A89:5BD8F5:6EABE8:6483E00E[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Date: Mon, 12 Jun 2023 18:21:25 GMT[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "X-Served-By: cache-mrs10567-MRS[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "X-Cache-Hits: 1[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "X-Timer: S1686594085.084393,VS0,VE1[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "X-Fastly-Request-ID: 1682520928ae826245bec011a551f3e9d10f0d55[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Expires: Mon, 12 Jun 2023 18:26:25 GMT[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "Source-Age: 202[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] wire - http-outgoing-0 << "[\r][\n]"
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << Connection: keep-alive
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << Content-Length: 723
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << Cache-Control: max-age=300
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << ETag: W/"e82b438271e9e8680c688b0b680efd0bdd22faa6d6f0a32fc1fd8accc486b67e"
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+[DEBUG] 2023-06-12 20:21:25.279 [main] headers - http-outgoing-0 << X-Frame-Options: deny
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << X-GitHub-Request-Id: 5178:0A89:5BD8F5:6EABE8:6483E00E
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << Content-Encoding: gzip
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << Accept-Ranges: bytes
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << Date: Mon, 12 Jun 2023 18:21:25 GMT
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << Via: 1.1 varnish
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << X-Served-By: cache-mrs10567-MRS
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << X-Cache: HIT
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << X-Cache-Hits: 1
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << X-Timer: S1686594085.084393,VS0,VE1
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << Cross-Origin-Resource-Policy: cross-origin
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << X-Fastly-Request-ID: 1682520928ae826245bec011a551f3e9d10f0d55
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << Expires: Mon, 12 Jun 2023 18:26:25 GMT
+[DEBUG] 2023-06-12 20:21:25.293 [main] headers - http-outgoing-0 << Source-Age: 202
+[DEBUG] 2023-06-12 20:21:25.293 [main] MainClientExec - ex-0000000001 connection can be kept alive for 3 MINUTES
+[DEBUG] 2023-06-12 20:21:25.309 [main] wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]V]o[0xffffffda]0[0x14]}[0xffffffe7]W\[0xffffff81]*[0xffffffb5][0x12][0x1f][[M[0xffffffd3]$[0x1e]hF[0xffffffbb]i [0x18][0xffffffb4][0xffffffdd]&[0xfffffff9][0xffffffc5]$7[0xffffffc1]R[0x12]#;[0xffffff94]v[0xffffffbf]~[0xffffffb6][0xfffffff3]1[0xffffff92][0xffffff9a][0xffffffc1][0x1a]x[0xffffffcb][0xffffffb5][0xffffffaf][0xffffffcf]9[0xffffffbe][0xfffffff7]8v[0xb][0x1c][0x1e]E4[0xfffffff6]$x4[0xffffffa1][0xb]*[0xffffffb1][0xffffffd1][0xffffff82][0xfffffffb]%[0xffffff93][0xffffffe0][0xffffffb3][0x10][0xffffffc1][0xffffffe5]qBY,!Y[0xffffffea] KM8,[0x10][0xfffffff0][0x19][0xffffffdd]u[0xffffff82][0x1e][0xffffffb0][0xffffffd8]L[0xffffffcb]%[0xffffff86][0xffffffa1][0xe][0xffffffb8][0xfffffff0]P[0xffffffe8]$[0xf][0x13]t[0x13]3[0xfffffff9][0xffffff84]B2[0xffffffae][0xffffffe6]|@[0xfffffff5][0x1d][0x8][0xffffffc4][0x18][0x16][0xffffff82]o[0xffffffa4][0xffffff9a]P[0xffffff94][0xffffffe7][0xffffffce]R[0xfffffff0][0x8][0xffffffdb]p[0xffffffcb][0x4][0xfffffffa][0xfffffffc][0xffffffb9][\r][0xffffff93][0x15][\n]"
+[DEBUG] 2023-06-12 20:21:25.309 [main] wire - http-outgoing-0 << "[0xffffffda][0xffffff86][0xffffffa1][0x17][0xffffffa8]Q3[0xffffffcb][0xffffffd6][0xffffffd1][0xffffff85][0xffffffc6][0xfffffff7][0xffffff98][0xffffffef][0xffffffa3][0xffffffc0]8[0x1][0xffffffae]s[0x12][0x16][0x7] _d[0xffffff82][0xffffff91][0xffffff84][0xfffffff3][0x1f],[0xfffffff6][0x14]j[0x1b]F,^+[0xffffff98]1ua2[0xffffffbf]h([0xffffff8e][0xffffff94][0xffffffa2][0xffffff91]m[0xffffffa3][0xffffffeb][0xffffff9a][0xffffffb0][0xffffffbb]I[0x17]t[0xffffffdf][0xffffffbd][0xffffffef][0xffffffbb][0xffffff91][0xffffffd7]U[0xffffffbb][0xffffff82][0xffffff9e][0x3][0xffffff9b][0xffffff88][0xffffffb9][0xffffffa6]$[0xffffffa6][0xc][0xffffff9b][0xffffffa5][0xffffffe2][0xffffff83][0xffffff98]F[0xffffffd8]o[0xffffff9e]Mg[0xffffff93][0xffffffbb][0xffffffd9]`|[0xfffffffb]u4[0xffffff9c][0x7f]"}B[0xffffffce][0x8][0xffffffb9][0xffffffe3]<[0x8][0xffffff91][0xffffff90][0xffffff94][0xffffff82][0xffffff90][0xffffffc1]j[0x15]2WI[0xffffffe3]1![0x19][0xffffff91]BnB[0xffffff80][0x9]<f[0xffffffb5][0xffffffe8]=[0xffffffd1]p[0xffffffbd][[0xffffffcf][0xffffffe5][0x1b][0xfffffff4][0xffffff9c][0xffffffff][0xfffffffc][0xfffffff8][0xffffffe1][0xffffffe2][0xffffff94][0xffffffa2][0xffffffae][0xe][0x14]5[0xffffff9a]8[0xffffff83][0xffffffd1]`:[0xfffffffd]<[0xffffffb8][0x1f][0xffffff9c]R[0xffffffcf]u[0x7f]6[0xffffffbc][0xffffff83][0xffffffef][0xf][0xffffffc3][0xffffffd9]/[0xfffffff8][0xfffffff2][0xffffffcd]y s[0xffffffee]'[0x1b]*0g[0xffffffcb][0xffffffc8]nF7H][0xffffff83][0xffffff97]{[0xffffffb1]Q[0x5][\r][0xffffffb5]c[0xffffffb4][0xf][0x2][0xffffffb3][0xffffffb4][0xffffff93][0xe]C[0xffffffa7][0xffffffb3]kAD][0xffffff9d][0xffffffde][0xffffffdb][0xffffffda][0xffffff88][0xffffffec][0xffffffa5][0xffffffbc][0xffffff99][0xffffffd9][0xffffffba]t[0xffffffb5][0xffffffea]9[0xffffffea][0x10])[0xffffffb7][0xffffffca][0xffffff9e][0xfffffff2][0xffffffe2]d^N[0xffffffd8]FW[0x16][0xffffffcd][0xffffffdc]_[0x10][0xfffffff9]i|[0x1c][0xffffff93][0xffffff8e][0xfffffff9]o[0x16][0xffffff86]4'!$G[0xffffffdf]W[0xfffffff4]W*j[[0xfffffff3]xR[0xffffffae][0xffffffb6][0xc][0xffffffd0],; #[0xffffffa9][0xffffff92]5[0xffffffb5][0x7][0xffffff9c][0xffffffb5][0xffffffd0][0x7f][0xffffff90][0xffffffc7]jgs[0xfffffffc][0xffffffc2][0xb][0xffffffd9][0x0]t[0xffffff9e]^'Y[0xfffffffb][0xffffff9f][0xffffffb1][0xffffffd8]:[0xffffffbf][0xffffff8d][0xffffffa5][0xffffff9a][0xffffffad][0x7f]m[0x5]&[0xffffffaa][0xffffffa0]^[0xffffff9b][0xffffffcb][0x5]f[0xffffffae][0xffffffe0]RU[0xffffff82][0x10]MS9l[0xffffff91]4t[0xfffffffb][0xffffff8a]][0xffffffd6][0xfffffff4][0xffffff96][0xffffffa6][0xffffff9f]P[0xffffffce][0xffffffd5][0xffffffce][0xffffff93][0xffffffff][0xffffff97][0xffffffcc]p[0xfffffffd][0xfffffff3][0xffffffe8][0x1b][0xffffffcc][0xffffffa2][0xffffffd9]Q[0xffffffbe][0xffffffb2][0xffffffa3][0xffffffc7]m'[0xffffffdf][0xffffffe4][[0xfffffffb]^[0xffffffb0][0xffffff9a][0xffffffbe][0xffffffda][0xffffffda]_[0xffffffce][0xffffff80][0xffffffd2][0xffffffc1]7[0xffffffb7]][0xffffffc1]b[0xffffffee][0xffffffb5][0xffffffff]w[0xffffff83][0xffffffed][0xffffffa7];[0x15]<[0x10]4[0xffffff92][0xffffff84][0x18][\n]"
+[DEBUG] 2023-06-12 20:21:25.309 [main] wire - http-outgoing-0 << "BB[0xffffffba][0xffffff8e]][0xffffffb5]jo[0xffffffb9]+"[0xffffffea][0xffffffb4][0xffffffff]h"[0xffffffea]\?5[0xffffffa9][0xffffffaf]k[0xffffffec][0xffffffff]P[0xffffffea][\n]"
+[DEBUG] 2023-06-12 20:21:25.309 [main] wire - http-outgoing-0 << "w[0xffffffe1]K[0x13][0xffffffda][0xffffffec][0xffffff98][0xffffffe6]Y[0xfffffffd]h8m6[0xffffff9c]T[0xffffffc1][0xfffffff2][0xffffffa7][0xffffff91]z_[0xffffff95]o85p[0x1c][0x13][0xffffffe6][0xfffffff0]5[0xffffffee][0xfffffffc][0xffffff92][0xffffff96][0xffffffda][0xfffffff7][0xffffffcf][0xffffffb1][0x5][0x1d][0xffffffea]K[0xffffff9b]9[0xffffff8e][0xffffffad]e[0xfffffff7][0xffffff93][0xffffffa8]`[0xffffffda][0xffffffff][0x1a][0xffffffd2][0xffffff88][0xffffff85][0xfffffffd][0xfffffff2][0xffffff91]N[0xfffffff6]`[0xffffffdf]2[0xffffffcf][0xffffffae]E[0xffffff97][0xffffffc5][0xffffffa2][0xffffff9d][0xffffffef]'[0xffffff9d]mun.[0xffffffd3]f^[0xffffffc7][0xffffff82][0xffffffda][0xffffff82]9[0xfffffff5][0xffffffa9]`[0x5][0xffffffbc]4[0xffffffa1][0x1d]<M[0xffffffb5]A[0xffffffa7]3[[0xffffffc0][0x7f][0x0][0xffffffc1][0xffffffd0]$[0xffffff85][0x1d][\r][0x0][0x0]"
+[DEBUG] 2023-06-12 20:21:25.309 [main] InternalHttpClient - ep-0000000001 releasing valid endpoint
+[DEBUG] 2023-06-12 20:21:25.309 [main] PoolingHttpClientConnectionManager - ep-0000000001 releasing endpoint
+[DEBUG] 2023-06-12 20:21:25.309 [main] PoolingHttpClientConnectionManager - ep-0000000001 connection http-outgoing-0 can be kept alive for 3 MINUTES
+[DEBUG] 2023-06-12 20:21:25.309 [main] PoolingHttpClientConnectionManager - ep-0000000001 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2023-06-12 20:21:25.309 [main] VersionDetector - Detecting chrome version using online commands.properties
+[DEBUG] 2023-06-12 20:21:25.341 [main] Shell - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2023-06-12 20:21:35.525 [main] Shell - Result: 
+[DEBUG] 2023-06-12 20:21:35.525 [main] Shell - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES(X86):\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2023-06-12 20:21:38.431 [main] Shell - Result: Version=114.0.5735.110
+[DEBUG] 2023-06-12 20:21:38.431 [main] ResolutionCache - Resolution chrome114=114.0.5735.90 in cache (valid until 20:33:12 12/06/2023 EET)
+[INFO ] 2023-06-12 20:21:38.431 [main] WebDriverManager - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+[DEBUG] 2023-06-12 20:21:38.431 [main] ResolutionCache - Storing resolution chrome=114 in cache (valid until 21:21:38 12/06/2023 EET)
+[DEBUG] 2023-06-12 20:21:38.588 [main] WebDriverManager - Driver chromedriver 114.0.5735.90 found in cache
+[INFO ] 2023-06-12 20:21:38.588 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kemo\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+[WARN ] 2023-06-12 20:21:53.316 [Exec Stream Pumper] ReportManager - Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 11466
+[WARN ] 2023-06-12 20:21:53.316 [Exec Stream Pumper] ReportManager - Only local connections are allowed.
+[WARN ] 2023-06-12 20:21:53.316 [Exec Stream Pumper] ReportManager - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[WARN ] 2023-06-12 20:21:53.457 [Exec Stream Pumper] ReportManager - ChromeDriver was started successfully.
+[WARN ] 2023-06-12 20:22:04.563 [main] ReportManager - Jun 12, 2023 8:22:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[WARN ] 2023-06-12 20:22:04.563 [main] ReportManager - WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 112
+[INFO ] 2023-06-12 20:22:04.563 [main] ReportManager - Successfully Opened: "WINDOWS | Chrome".
+[INFO ] 2023-06-12 20:22:04.688 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:04.688 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:04.688 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:04.688 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
+[ERROR] 2023-06-12 20:22:04.688 [main] AllureLifecycle - Could not update step: step with uuid 41721b3c-fcb5-4409-bc39-38cb06d7f73d not found
+[INFO ] 2023-06-12 20:22:04.766 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 2' test cases in the current suite                                        
+                                           Test Method: 'tests.LoginTest.registerWithValidEmailAndPw'                                           
+                                  Test Description: 'Validate registering a user with valid email and password'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-12 20:22:04.798 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:04.798 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:08.389 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:08.389 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:08.530 [main] ReportManager - Target URL: "https://demo.nopcommerce.com/register?returnUrl=%2F"
+[INFO ] 2023-06-12 20:22:08.568 [main] ReportManager - Initial URL: "data:,"
+[INFO ] 2023-06-12 20:22:10.793 [main] ReportManager - Navigate to url "https://demo.nopcommerce.com/register?returnUrl=%2F".
+[INFO ] 2023-06-12 20:22:11.623 [main] ReportManager - Get text "Register" from "By.className: page-title".
+[INFO ] 2023-06-12 20:22:11.623 [main] ReportManager - Expected "Register", and actual "Register"
+[INFO ] 2023-06-12 20:22:18.495 [main] ReportManager - Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'Register' for the 'text' attribute, element locator 'By.className: page-title'" and Actual "Register". Comparison Type "CONTAINS". Validation Type "POSITIVE".
+[INFO ] 2023-06-12 20:22:18.542 [main] ReportManager - Successfully created attachment 'Screenshot - 1686594132484_registerWithValidEmailAndPw_ValidateElementAttribute_passed'
+[INFO ] 2023-06-12 20:22:18.557 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:18.557 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:18.604 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:18.604 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:18.667 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:18.682 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:25.874 [main] ReportManager - Type "John" into "First name:".
+[INFO ] 2023-06-12 20:22:26.997 [main] ReportManager - Type "Doe" into "Last name:".
+[INFO ] 2023-06-12 20:22:27.170 [main] ReportManager - Type "johndoe_2023.06.12.20.21.22@gmail.com" into "Email:".
+[INFO ] 2023-06-12 20:22:27.767 [main] ReportManager - Type "tester123" into "Password:".
+[INFO ] 2023-06-12 20:22:27.927 [main] ReportManager - Type "tester123" into "Confirm password:".
+[INFO ] 2023-06-12 20:22:29.346 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-12 20:22:29.491 [main] ReportManager - Click "REGISTER".
+[INFO ] 2023-06-12 20:22:29.492 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:29.492 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:31.343 [main] ReportManager - Get text "Your registration completed" from "By.className: result".
+[INFO ] 2023-06-12 20:22:31.343 [main] ReportManager - Expected "Your registration completed", and actual "Your registration completed"
+[INFO ] 2023-06-12 20:22:32.323 [main] ReportManager - Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'Your registration completed' for the 'text' attribute, element locator 'By.className: result'" and Actual "Your registration completed". Comparison Type "CONTAINS". Validation Type "POSITIVE".
+[INFO ] 2023-06-12 20:22:32.338 [main] ReportManager - Successfully created attachment 'Screenshot - 1686594151677_registerWithValidEmailAndPw_ValidateElementAttribute_passed'
+[INFO ] 2023-06-12 20:22:32.577 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-12 20:22:32.639 [main] ReportManager - Click "CONTINUE".
+[INFO ] 2023-06-12 20:22:32.646 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: registerWithValidEmailAndPw'
+[INFO ] 2023-06-12 20:22:33.180 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 2' test cases in the current suite                                        
+                                          Test Method: 'tests.LoginTest.loginWithValidEmailAndPassword'                                          
+                                      Test Description: 'Validate Login with registered email and password'                                      
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-12 20:22:33.421 [main] ReportManager - Target URL: "https://demo.nopcommerce.com/login"
+[INFO ] 2023-06-12 20:22:33.481 [main] ReportManager - Initial URL: "https://demo.nopcommerce.com"
+[INFO ] 2023-06-12 20:22:33.923 [main] ReportManager - Navigate to url "https://demo.nopcommerce.com/login".
+[INFO ] 2023-06-12 20:22:33.924 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:33.925 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"".
+[INFO ] 2023-06-12 20:22:34.245 [main] ReportManager - Type "johndoe_2023.06.12.20.21.22@gmail.com" into "Email:".
+[INFO ] 2023-06-12 20:22:34.481 [main] ReportManager - Type "tester123" into "Password:".
+[INFO ] 2023-06-12 20:22:34.710 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-12 20:22:34.743 [main] ReportManager - Click "LOG IN".
+[INFO ] 2023-06-12 20:22:35.408 [main] ReportManager - Attempting to getAttribute "hidden" from elementLocator "By.className: ico-account".
+[INFO ] 2023-06-12 20:22:35.462 [main] ReportManager - Get attribute from "My account".
+[INFO ] 2023-06-12 20:22:35.463 [main] ReportManager - Expected "null", and actual "null"
+[INFO ] 2023-06-12 20:22:37.811 [main] ReportManager - Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.className: ico-account'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-06-12 20:22:37.829 [main] ReportManager - Successfully created attachment 'Screenshot - 1686594156125_loginWithValidEmailAndPassword_ValidateElementAttribute_passed'
+[INFO ] 2023-06-12 20:22:37.861 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: loginWithValidEmailAndPassword'
+[INFO ] 2023-06-12 20:22:37.877 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                              Starting execution of tear down configuration method                                              
+                                                           'tests.LoginTest.tearDown'                                                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-12 20:22:41.845 [main] ReportManager - Successfully Closed Driver.
+[INFO ] 2023-06-12 20:22:41.845 [main] ReportManager - Driver is already closed.
+[INFO ] 2023-06-12 20:22:41.876 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                            Starting execution of suite teardown configuration method                                            
+                                        'com.shaft.listeners.internal.ConfigurationHelper.suiteTeardown'                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-12 20:22:41.876 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log'
+[INFO ] 2023-06-12 20:22:41.876 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/logs/log4j.log"".
+[INFO ] 2023-06-12 20:22:41.876 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "target/logs/log4j.log"".

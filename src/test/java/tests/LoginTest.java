@@ -16,8 +16,8 @@ import java.text.SimpleDateFormat;
 public class LoginTest {
 
     ///////////////////Variables\\\\\\\\\\\\\\\\\\\
-    SHAFT.GUI.WebDriver driver;
-    SHAFT.TestData.JSON testData;
+    ThreadLocal<SHAFT.GUI.WebDriver> driver = new ThreadLocal<>();
+    ThreadLocal<SHAFT.TestData.JSON> testData = new ThreadLocal<>() ;
     RegisterPage registerPage;
     LoginPage loginPage;
     HomePage homePage;
@@ -30,12 +30,12 @@ public class LoginTest {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Register")
     public void registerWithValidEmailAndPw(){
-        email = testData.getTestData("UserInfo.Email")+"_"+currentTime+testData.getTestData("UserInfo.Domain");
+        email = testData.get().getTestData("UserInfo.Email")+"_"+currentTime+testData.get().getTestData("UserInfo.Domain");
 
         registerPage    .openRegisterPage();
-        driver          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register").perform();
-        registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName"),testData.getTestData("UserInfo.LastName"),email,testData.getTestData("UserInfo.Password"));
-        driver          .assertThat().element(registerPage.getRegisterConfirmationLocator()).text().contains(testData.getTestData("messages.ConfirmRegister")).perform();
+        driver.get()          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register").perform();
+        registerPage    .RegisterUser(testData.get().getTestData("UserInfo.FirstName"),testData.get().getTestData("UserInfo.LastName"),email,testData.get().getTestData("UserInfo.Password"));
+        driver.get()          .assertThat().element(registerPage.getRegisterConfirmationLocator()).text().contains(testData.get().getTestData("messages.ConfirmRegister")).perform();
         registerPage    .clickContinueBtn();
     }
 
@@ -44,24 +44,24 @@ public class LoginTest {
     @Story("Login")
     public void loginWithValidEmailAndPassword(){
         loginPage   .openLoginPage();
-        loginPage   .login(email, testData.getTestData("UserInfo.Password"));
-        driver      .assertThat().element(homePage.getMyAccountLinkLocator()).isVisible().perform();
+        loginPage   .login(email, testData.get().getTestData("UserInfo.Password"));
+        driver.get()      .assertThat().element(homePage.getMyAccountLinkLocator()).isVisible().perform();
     }
 
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
     @BeforeClass
     public void setUp(){
-        driver = new SHAFT.GUI.WebDriver();
-        registerPage = new RegisterPage(driver);
-        homePage = new HomePage(driver);
-        loginPage = new LoginPage(driver);
-        testData = new SHAFT.TestData.JSON("LoginTestData.json");
+        driver.set(new SHAFT.GUI.WebDriver());
+        registerPage = new RegisterPage(driver.get());
+        homePage = new HomePage(driver.get());
+        loginPage = new LoginPage(driver.get());
+        testData.set(new SHAFT.TestData.JSON("LoginTestData.json"));
 
     }
 
     @AfterClass
     public void tearDown(){
-        driver.quit();
+        driver.get().quit();
     }
 }
