@@ -17,11 +17,10 @@ public class ProductDetailsPage {
     By ProductTitleLocator = By.className("product-name");
     By AddProductToWishList = By.id("add-to-wishlist-button-4");
     By ProductAddedConfirmationLocator = By.className("success");
-    By whishListLinkLocator = By.cssSelector("p.content > a");
+    By AddReviewsLinkLocator = By.xpath("//div[@class = 'product-review-links']/a[contains(text(),'your review')]");
 
 
     /////////////////Actions\\\\\\\\\\\\\\\\\\\
-
     @Step("Open product details page")
     public void openProductDetails(String ProductName){
         By ProductLinkLocator = By.xpath("//h2[@class = 'product-title']//a[contains (text() , '"+ProductName+"')]");
@@ -40,8 +39,8 @@ public class ProductDetailsPage {
         return ProductAddedConfirmationLocator;
     }
 
-    public void openWishList(){
-        driver.element().click(whishListLinkLocator);
+    public void openProductReviewsPage(){
+        driver.element().click(AddReviewsLinkLocator);
     }
 
 

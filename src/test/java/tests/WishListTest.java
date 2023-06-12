@@ -1,9 +1,7 @@
 package tests;
 
 import com.shaft.driver.SHAFT;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -11,6 +9,8 @@ import pages.HomePage;
 import pages.ProductDetailsPage;
 import pages.WishListPage;
 
+@Epic("NopCommerce")
+@Feature("Add and remove products from wishlists")
 public class WishListTest {
 
     ///////////////////Variables\\\\\\\\\\\\\\\\\\\
@@ -26,19 +26,30 @@ public class WishListTest {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Search for product")
     public void searchForProductByName(){
-        ProductName = testData.getTestData(testData.getTestData("info.ProductName"));
+        ProductName = testData.getTestData("info.ProductName");
 
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
         driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName);
     }
 
-    @Test(dependsOnMethods = "searchForProductByName")
+
+    @Test(dependsOnMethods = "searchForProductByName", description = "Verify adding product for the wishlist")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Add product to wishlist")
     public void verifyAddingProductToWishlist(){
         productDetailsPage  .addProductToWishList();
         driver              .assertThat().element(productDetailsPage.getProductAddedConfirmationLocator()).text().contains(testData.getTestData("messages.prdouctAdded")).perform();
-        productDetailsPage  .openWishList();
+        wishListPage        .openWishListPage();
         driver              .assertThat().element(wishListPage.getProductLinkLocator(ProductName)).text().contains(testData.getTestData("info.ProductName")).perform();
+    }
+
+    @Test(dependsOnMethods = "verifyAddingProductToWishlist" , description = "Verify deleting product from wishlist after adding it")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Delete product from wishlist")
+    public void verifyDeletingProductFromWishList(){
+        wishListPage        .removeProductFromWishList(ProductName);
+        driver              .assertThat().element(wishListPage.getProductLinkLocator(ProductName)).doesNotExist().perform();
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\

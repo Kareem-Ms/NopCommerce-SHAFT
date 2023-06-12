@@ -45,6 +45,7 @@ Test Cases:
 4-click on search button
 5-Verify that the product name appear as a card
 
+(done)
 -Verify adding product to wishList
 1-do the same steps of searching for specific product
 2-open product details page
@@ -52,4 +53,22 @@ Test Cases:
 4-verify that confirmation message appear
 5-click on wishlist link that exist in confirmation message
 6-verify that the product name exist on opening the wishlist
+7-click on delete button next to the product in wishlist
+8-Verify that the product name is no longer exist
 
+-Verify adding product review for a registered user
+1-do the same steps in the test case of registering new user
+2-do the same steps in the test case of login with registered user
+3-do the same steps in the test case of searching for specific product
+4-click on Add product review link
+5-Verify that "Write your own review" title appears
+6-fill in the fields of Review title, Review text , rating then click on submit review button
+7-Verify that "Product review is successfully added." title appears
+
+-Verify adding product review for a non registered user
+1-do the same steps in the test case of searching for specific product
+2-click on Add product review link
+3-Verify that "Write your own review" title appears
+4-try to fill in the fields of Review title, Review text , rating then click on submit review button
+5-Verify that the "Only registered users can write reviews" appears
+6-Verify that Review title , Review text is not clickable or disabled

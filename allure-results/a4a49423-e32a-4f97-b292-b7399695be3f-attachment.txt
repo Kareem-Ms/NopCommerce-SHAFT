@@ -1,0 +1,178 @@
+[INFO ] 2023-06-07 12:19:56.344 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                      Powered by SHAFT Engine v7.2.20230527                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-07 12:19:59.973 [main] ReportManager - Loaded OpenCV "opencv_java470".
+[INFO ] 2023-06-07 12:19:59.975 [main] ReportManager - File Action "DeleteFolder" successfully performed. With the following test data "Target Folder: "execution-summary"".
+[INFO ] 2023-06-07 12:19:59.977 [main] ReportManager - Initializing Allure Reporting Environment...
+[INFO ] 2023-06-07 12:20:00.069 [main] ReportManager - Initializing Extent Reporting Environment...
+[INFO ] 2023-06-07 12:20:00.421 [main] Utils - [TestNG] Running:
+  C:\Users\usama\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+[INFO ] 2023-06-07 12:20:00.443 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                             Starting execution of suite setup configuration method                                             
+                                          'com.shaft.listeners.internal.ConfigurationHelper.suiteSetup'                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-07 12:20:00.475 [main] ReportManager - Initializing Important Links...
+[INFO ] 2023-06-07 12:20:00.490 [main] ReportManager - Initializing Properties...
+[INFO ] 2023-06-07 12:20:00.549 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                Starting execution of set up configuration method                                                
+                                                         'tests.ProductReviewTest.setUp'                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-07 12:20:00.563 [main] ReportManager - Setting "targetOperatingSystem" property with "WINDOWS".
+[INFO ] 2023-06-07 12:20:00.565 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2023-06-07 12:20:00.566 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2023-06-07 12:20:00.570 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2023-06-07 12:20:00.571 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2023-06-07 12:20:00.576 [main] ReportManager - Attempting to run locally on: "WINDOWS | Chrome".
+[INFO ] 2023-06-07 12:20:00.577 [main] ReportManager - Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time...
+[DEBUG] 2023-06-07 12:20:00.852 [main] ResolutionCache - Resolution chrome=114 in cache (valid until 12:32:26 07/06/2023 EET)
+[DEBUG] 2023-06-07 12:20:00.853 [main] ResolutionCache - Resolution chrome114=114.0.5735.90 in cache (valid until 09:47:37 08/06/2023 EET)
+[INFO ] 2023-06-07 12:20:00.853 [main] WebDriverManager - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+[DEBUG] 2023-06-07 12:20:00.864 [main] WebDriverManager - Driver chromedriver 114.0.5735.90 found in cache
+[INFO ] 2023-06-07 12:20:00.865 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\usama\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+[WARN ] 2023-06-07 12:20:01.151 [Exec Stream Pumper] ReportManager - Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 13198
+[WARN ] 2023-06-07 12:20:01.151 [Exec Stream Pumper] ReportManager - Only local connections are allowed.
+[WARN ] 2023-06-07 12:20:01.151 [Exec Stream Pumper] ReportManager - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[WARN ] 2023-06-07 12:20:01.159 [Exec Stream Pumper] ReportManager - ChromeDriver was started successfully.
+[WARN ] 2023-06-07 12:20:02.587 [main] ReportManager - Jun 07, 2023 12:20:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[WARN ] 2023-06-07 12:20:02.589 [main] ReportManager - WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 112
+[INFO ] 2023-06-07 12:20:02.602 [main] ReportManager - Successfully Opened: "WINDOWS | Chrome".
+[INFO ] 2023-06-07 12:20:02.607 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:02.608 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:02.608 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:02.785 [main] ReportManager - Successfully created attachment 'Test Data - JSON'
+[ERROR] 2023-06-07 12:20:02.786 [main] AllureLifecycle - Could not update step: step with uuid f54a81ba-e929-49c7-b413-dd838ef75cd8 not found
+[INFO ] 2023-06-07 12:20:02.846 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '1 out of 4' test cases in the current suite                                        
+                                       Test Method: 'tests.ProductReviewTest.registerWithValidEmailAndPw'                                       
+                                  Test Description: 'Validate registering a user with valid email and password'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-07 12:20:02.854 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:02.854 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:03.738 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:03.739 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:03.785 [main] ReportManager - Target URL: "https://demo.nopcommerce.com/register?returnUrl=%2F"
+[INFO ] 2023-06-07 12:20:03.804 [main] ReportManager - Initial URL: "data:,"
+[INFO ] 2023-06-07 12:20:05.384 [main] ReportManager - Navigate to url "https://demo.nopcommerce.com/register?returnUrl=%2F".
+[INFO ] 2023-06-07 12:20:05.499 [main] ReportManager - Get text "Register" from "By.className: page-title".
+[INFO ] 2023-06-07 12:20:05.499 [main] ReportManager - Expected "Register", and actual "Register"
+[INFO ] 2023-06-07 12:20:06.531 [main] ReportManager - Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'Register' for the 'text' attribute, element locator 'By.className: page-title'" and Actual "Register". Comparison Type "CONTAINS". Validation Type "POSITIVE".
+[INFO ] 2023-06-07 12:20:06.539 [main] ReportManager - Successfully created attachment 'Screenshot - 1686133205764_registerWithValidEmailAndPw_ValidateElementAttribute_passed'
+[INFO ] 2023-06-07 12:20:06.541 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:06.541 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:06.563 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:06.563 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:06.584 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:06.589 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:06.752 [main] ReportManager - Type "John" into "First name:".
+[INFO ] 2023-06-07 12:20:06.892 [main] ReportManager - Type "Doe" into "Last name:".
+[INFO ] 2023-06-07 12:20:07.038 [main] ReportManager - Type "johndoe_2023.06.07.12.20.00@gmail.com" into "Email:".
+[INFO ] 2023-06-07 12:20:07.155 [main] ReportManager - Type "tester123" into "Password:".
+[INFO ] 2023-06-07 12:20:07.286 [main] ReportManager - Type "tester123" into "Confirm password:".
+[INFO ] 2023-06-07 12:20:07.479 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-07 12:20:07.542 [main] ReportManager - Click "REGISTER".
+[INFO ] 2023-06-07 12:20:07.543 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:07.544 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:08.900 [main] ReportManager - Get text "Your registration completed" from "By.className: result".
+[INFO ] 2023-06-07 12:20:08.900 [main] ReportManager - Expected "Your registration completed", and actual "Your registration completed"
+[INFO ] 2023-06-07 12:20:09.359 [main] ReportManager - Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'Your registration completed' for the 'text' attribute, element locator 'By.className: result'" and Actual "Your registration completed". Comparison Type "CONTAINS". Validation Type "POSITIVE".
+[INFO ] 2023-06-07 12:20:09.361 [main] ReportManager - Successfully created attachment 'Screenshot - 1686133209080_registerWithValidEmailAndPw_ValidateElementAttribute_passed'
+[INFO ] 2023-06-07 12:20:09.535 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-07 12:20:09.570 [main] ReportManager - Click "CONTINUE".
+[INFO ] 2023-06-07 12:20:09.577 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: registerWithValidEmailAndPw'
+[INFO ] 2023-06-07 12:20:09.644 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '2 out of 4' test cases in the current suite                                        
+                                      Test Method: 'tests.ProductReviewTest.loginWithValidEmailAndPassword'                                      
+                                      Test Description: 'Validate Login with registered email and password'                                      
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-07 12:20:10.444 [main] ReportManager - Target URL: "https://demo.nopcommerce.com/login"
+[INFO ] 2023-06-07 12:20:10.471 [main] ReportManager - Initial URL: "https://demo.nopcommerce.com"
+[INFO ] 2023-06-07 12:20:11.318 [main] ReportManager - Navigate to url "https://demo.nopcommerce.com/login".
+[INFO ] 2023-06-07 12:20:11.318 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:11.319 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:11.476 [main] ReportManager - Type "johndoe_2023.06.07.12.20.00@gmail.com" into "Email:".
+[INFO ] 2023-06-07 12:20:11.594 [main] ReportManager - Type "tester123" into "Password:".
+[INFO ] 2023-06-07 12:20:11.763 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-07 12:20:11.795 [main] ReportManager - Click "LOG IN".
+[INFO ] 2023-06-07 12:20:12.518 [main] ReportManager - Attempting to getAttribute "hidden" from elementLocator "By.className: ico-account".
+[INFO ] 2023-06-07 12:20:12.571 [main] ReportManager - Get attribute from "My account".
+[INFO ] 2023-06-07 12:20:12.571 [main] ReportManager - Expected "null", and actual "null"
+[INFO ] 2023-06-07 12:20:13.661 [main] ReportManager - Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'null' for the 'hidden' attribute, element locator 'By.className: ico-account'" and Actual "null". Comparison Type "EQUALS". Validation Type "POSITIVE".
+[INFO ] 2023-06-07 12:20:13.671 [main] ReportManager - Successfully created attachment 'Screenshot - 1686133212992_loginWithValidEmailAndPassword_ValidateElementAttribute_passed'
+[INFO ] 2023-06-07 12:20:13.716 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: loginWithValidEmailAndPassword'
+[INFO ] 2023-06-07 12:20:13.728 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '3 out of 4' test cases in the current suite                                        
+                                          Test Method: 'tests.ProductReviewTest.searchForProductByName'                                          
+                             Test Description: 'Verify Searching for specific product and viewing it's product page'                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-07 12:20:13.730 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:13.731 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:13.873 [main] ReportManager - Type "MacBook" into "Search store".
+[INFO ] 2023-06-07 12:20:14.052 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-07 12:20:14.099 [main] ReportManager - Click "SEARCH".
+[INFO ] 2023-06-07 12:20:15.253 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-07 12:20:15.298 [main] ReportManager - Click "Apple MacBook Pro 13-inch".
+[INFO ] 2023-06-07 12:20:15.300 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: searchForProductByName'
+[INFO ] 2023-06-07 12:20:15.304 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '4 out of 4' test cases in the current suite                                        
+                                     Test Method: 'tests.ProductReviewTest.addProductReviewByRegisteredUser'                                     
+                                     Test Description: 'Verify adding product review for a registered user'                                     
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-07 12:20:16.953 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-07 12:20:16.991 [main] ReportManager - Click "Add your review".
+[INFO ] 2023-06-07 12:20:16.992 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:16.992 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:17.458 [main] ReportManager - Get text "Write your own review" from "By.cssSelector: #review-form >div.title".
+[INFO ] 2023-06-07 12:20:17.459 [main] ReportManager - Expected "own review", and actual "Write your own review"
+[INFO ] 2023-06-07 12:20:17.901 [main] ReportManager - Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'own review' for the 'text' attribute, element locator 'By.cssSelector: #review-form >div.title'" and Actual "Write your own review". Comparison Type "CONTAINS". Validation Type "POSITIVE".
+[INFO ] 2023-06-07 12:20:17.904 [main] ReportManager - Successfully created attachment 'Screenshot - 1686133217632_addProductReviewByRegisteredUser_ValidateElementAttribute_passed'
+[INFO ] 2023-06-07 12:20:17.904 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:17.904 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:17.919 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:17.920 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:17.933 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:17.934 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:18.065 [main] ReportManager - Type "own review" into "Review title:".
+[INFO ] 2023-06-07 12:20:18.203 [main] ReportManager - Type "This product is really a good one" into "Review text:".
+[INFO ] 2023-06-07 12:20:18.372 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-07 12:20:18.409 [main] ReportManager - Click "Good".
+[INFO ] 2023-06-07 12:20:18.582 [main] ReportManager - Moved the mouse to the middle of the element.
+[INFO ] 2023-06-07 12:20:18.617 [main] ReportManager - Click "SUBMIT REVIEW".
+[INFO ] 2023-06-07 12:20:18.617 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:18.618 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"".
+[INFO ] 2023-06-07 12:20:19.057 [main] ReportManager - Get text "Product review is successfully added." from "By.cssSelector: div.page-body > div.result".
+[INFO ] 2023-06-07 12:20:19.058 [main] ReportManager - Expected "review is successfully added.", and actual "Product review is successfully added."
+[INFO ] 2023-06-07 12:20:19.475 [main] ReportManager - Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'review is successfully added.' for the 'text' attribute, element locator 'By.cssSelector: div.page-body > div.result'" and Actual "Product review is successfully added.". Comparison Type "CONTAINS". Validation Type "POSITIVE".
+[INFO ] 2023-06-07 12:20:19.477 [main] ReportManager - Successfully created attachment 'Screenshot - 1686133219245_addProductReviewByRegisteredUser_ValidateElementAttribute_passed'
+[INFO ] 2023-06-07 12:20:19.479 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: addProductReviewByRegisteredUser'
+[INFO ] 2023-06-07 12:20:19.481 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                              Starting execution of tear down configuration method                                              
+                                                       'tests.ProductReviewTest.tearDown'                                                       
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-07 12:20:20.273 [main] ReportManager - Successfully Closed Driver.
+[INFO ] 2023-06-07 12:20:20.274 [main] ReportManager - Driver is already closed.
+[INFO ] 2023-06-07 12:20:20.288 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                            Starting execution of suite teardown configuration method                                            
+                                        'com.shaft.listeners.internal.ConfigurationHelper.suiteTeardown'                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[INFO ] 2023-06-07 12:20:20.290 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log'
+[INFO ] 2023-06-07 12:20:20.290 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/logs/log4j.log"".
+[INFO ] 2023-06-07 12:20:20.291 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "target/logs/log4j.log"".
