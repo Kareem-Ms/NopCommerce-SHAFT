@@ -1,6 +1,0 @@
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-                                        Starting Execution: '7 out of 15' test cases in the current suite                                        
-                                   Test Method: 'tests.ChangePasswordTest.VerifyChangingPasswordSuccessfully'                                   
-                                       Test Description: 'Validate changing account password to a new one'                                       
-------------------------------------------------------------------------------------------------------------------------------------------------

@@ -2,9 +2,7 @@ package tests;
 
 import com.shaft.driver.SHAFT;
 import io.qameta.allure.*;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 import pages.ProductDetailsPage;
 
@@ -32,7 +30,7 @@ public class SearchTest {
 
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
-    @BeforeClass
+    @BeforeTest
     public void setUp(){
         driver = new SHAFT.GUI.WebDriver();
         testData = new SHAFT.TestData.JSON("SearchTestData.json");
@@ -41,7 +39,7 @@ public class SearchTest {
         homePage.navigateToHomePage();
     }
 
-    @AfterClass
+    @AfterTest
     public void tearDowm(){
         driver.quit();
     }

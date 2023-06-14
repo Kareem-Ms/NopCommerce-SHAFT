@@ -45,7 +45,7 @@ public class RegisterUserTest {
 
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
-    @BeforeClass
+    @BeforeTest
     public void classSetUp(){
         testData = new SHAFT.TestData.JSON("RegisterUserTestData.json");
     }

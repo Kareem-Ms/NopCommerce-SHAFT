@@ -4,9 +4,7 @@ import com.shaft.driver.SHAFT;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.*;
 
 import java.text.SimpleDateFormat;
@@ -70,7 +68,7 @@ public class ProductReviewTest {
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
-    @BeforeClass
+    @BeforeTest
     public void setUp(){
         driver = new SHAFT.GUI.WebDriver();
         testData = new SHAFT.TestData.JSON("ProductReviewTestData.json");
@@ -81,7 +79,7 @@ public class ProductReviewTest {
         registerPage = new RegisterPage(driver);
     }
 
-    @AfterClass
+    @AfterTest
     public void tearDown(){
         driver.quit();
     }

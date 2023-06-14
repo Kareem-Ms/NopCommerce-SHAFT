@@ -1,0 +1,6 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '5 out of 5' test cases in the current suite                                        
+                                          Test Method: 'tests.LoginTest.loginWithValidEmailAndPassword'                                          
+                                      Test Description: 'Validate Login with registered email and password'                                      
+------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+[ReportManager] Setting "targetOperatingSystem" property with "WINDOWS". @14-06-2023 08:40:48.0201 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"". @14-06-2023 08:40:48.0202 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"". @14-06-2023 08:40:48.0203 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"". @14-06-2023 08:40:48.0204 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"". @14-06-2023 08:40:48.0205 AM
+[ReportManager] Attempting to run locally on: "WINDOWS | Chrome". @14-06-2023 08:40:48.0206 AM
+[ReportManager] Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @14-06-2023 08:40:48.0206 AM
+[ReportManager] Successfully Opened: "WINDOWS | Chrome". @14-06-2023 08:40:49.0238 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "LoginTestData.json"". @14-06-2023 08:40:49.0239 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"". @14-06-2023 08:40:49.0240 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"". @14-06-2023 08:40:49.0242 AM
+[ReportManager] Loaded Test Data: "src/test/resources/testDataFiles/LoginTestData.json". @14-06-2023 08:40:49.0243 AM
+[ReportManager] Successfully created attachment 'Test Data - JSON' @14-06-2023 08:40:49.0244 AM

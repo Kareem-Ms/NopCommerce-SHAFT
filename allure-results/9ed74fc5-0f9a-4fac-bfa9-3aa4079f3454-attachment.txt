@@ -1,0 +1,141 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '4 out of 5' test cases in the current suite                                        
+                                           Test Method: 'tests.LoginTest.registerWithValidEmailAndPw'                                           
+                                  Test Description: 'Validate registering a user with valid email and password'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"". @14-06-2023 08:40:49.0248 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"". @14-06-2023 08:40:49.0248 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/LoginTestData.json"". @14-06-2023 08:40:49.0268 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/LoginTestData.json"". @14-06-2023 08:40:49.0268 AM
+[ReportManager] Target URL: "https://demo.nopcommerce.com/register?returnUrl=%2F" @14-06-2023 08:40:49.0301 AM
+[ReportManager] Initial URL: "data:," @14-06-2023 08:40:49.0322 AM
+[ReportManager] org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.133)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38b2d3237c04ec736e9f3b64e82d4378, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\usama\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61392}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61392/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 60000, script: 30000}, unhandledPromptBehavior: accept and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38b2d3237c04ec736e9f3b64e82d4378
+ java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+ java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+ java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
+ com.shaft.gui.browser.internal.JavaScriptWaitManager.waitForJSLoadIfDefined(JavaScriptWaitManager.java:127)
+ com.shaft.gui.browser.internal.JavaScriptWaitManager.waitForLazyLoading(JavaScriptWaitManager.java:44)
+ com.shaft.gui.browser.internal.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:306)
+ com.shaft.gui.browser.internal.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:239)
+ pages.RegisterPage.openRegisterPage(RegisterPage.java:33)
+ tests.LoginTest.registerWithValidEmailAndPw(LoginTest.java:33)
+ java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+ java.base/java.lang.reflect.Method.invoke(Method.java:578)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+ org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+ org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+ org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+ org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623) @14-06-2023 08:40:50.0647 AM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/register?returnUrl=%2F". @14-06-2023 08:40:50.0648 AM
+[ReportManager] org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.133)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38b2d3237c04ec736e9f3b64e82d4378, executeScript {script=return typeof jQuery != 'undefined', args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\usama\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61392}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61392/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 60000, script: 30000}, unhandledPromptBehavior: accept and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38b2d3237c04ec736e9f3b64e82d4378
+ java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+ java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+ java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
+ com.shaft.gui.browser.internal.JavaScriptWaitManager.waitForJQueryLoadIfDefined(JavaScriptWaitManager.java:59)
+ com.shaft.gui.browser.internal.JavaScriptWaitManager.waitForLazyLoading(JavaScriptWaitManager.java:42)
+ com.shaft.validation.internal.ValidationsExecutor.perform(ValidationsExecutor.java:138)
+ tests.LoginTest.registerWithValidEmailAndPw(LoginTest.java:34)
+ java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+ java.base/java.lang.reflect.Method.invoke(Method.java:578)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+ org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+ org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+ org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+ org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623) @14-06-2023 08:40:50.0654 AM
+[ReportManager] Failed to Get text from "By.className: page-title". @14-06-2023 08:40:50.0664 AM
+[ReportManager] org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.133)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38b2d3237c04ec736e9f3b64e82d4378, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\usama\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61392}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61392/devtoo..., se:cdpVersion: 114.0.5735.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 60000, script: 30000}, unhandledPromptBehavior: accept and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38b2d3237c04ec736e9f3b64e82d4378
+ java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+ java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+ java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+ com.shaft.gui.internal.image.ScreenshotManager.takeViewportScreenshot(ScreenshotManager.java:236)
+ com.shaft.gui.internal.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:435)
+ com.shaft.gui.internal.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:373)
+ com.shaft.gui.internal.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:124)
+ com.shaft.validation.internal.ValidationsHelper.reportValidationState(ValidationsHelper.java:612)
+ com.shaft.validation.internal.ValidationsHelper.fail(ValidationsHelper.java:395)
+ com.shaft.validation.internal.ValidationsHelper.validateElementAttribute(ValidationsHelper.java:164)
+ com.shaft.validation.internal.ValidationsExecutor.perform(ValidationsExecutor.java:149)
+ tests.LoginTest.registerWithValidEmailAndPw(LoginTest.java:34)
+ java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+ java.base/java.lang.reflect.Method.invoke(Method.java:578)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+ org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+ org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+ org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+ org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+ org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1623) @14-06-2023 08:40:50.0667 AM
+[ReportManager] Assertion "ValidateElementAttribute" FAILED. Expected "Value Should be 'Register' for the 'text' attribute, element locator 'By.className: page-title'" and Actual "Failed to read the desired element attribute". Comparison Type "CONTAINS". Validation Type "POSITIVE". @14-06-2023 08:40:50.0667 AM
+[ReportManager] Assertion Failed: The Element located by "By.className: page-title" text contains "Register". @14-06-2023 08:40:50.0667 AM
+[ReportManager] Successfully created attachment 'Validation Test Data - Failure Reason' @14-06-2023 08:40:50.0668 AM
+[ReportManager] Assertion "ValidateElementAttribute" FAILED. Expected "Value Should be 'Register' for the 'text' attribute, element locator 'By.className: page-title'" and Actual "Failed to read the desired element attribute". Comparison Type "CONTAINS". Validation Type "POSITIVE". Root cause: "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed" @14-06-2023 08:40:50.0669 AM
+[ReportManager] Successfully created attachment 'Validations helper - Get  stack  trace - Exception Stacktrace' @14-06-2023 08:40:50.0670 AM
+[ReportManager] Successfully created attachment 'SHAFT Engine Logs - Current Method log: setUp' @14-06-2023 08:40:50.0770 AM
