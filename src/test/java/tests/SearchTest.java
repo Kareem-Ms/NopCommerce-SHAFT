@@ -25,12 +25,12 @@ public class SearchTest {
 
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
-        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName);
+        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName).perform();
     }
 
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
-    @BeforeTest
+    @BeforeClass
     public void setUp(){
         driver = new SHAFT.GUI.WebDriver();
         testData = new SHAFT.TestData.JSON("SearchTestData.json");
@@ -39,7 +39,7 @@ public class SearchTest {
         homePage.navigateToHomePage();
     }
 
-    @AfterTest
+    @AfterClass
     public void tearDowm(){
         driver.quit();
     }

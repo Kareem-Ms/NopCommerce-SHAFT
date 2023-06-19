@@ -54,7 +54,7 @@ public class ProductReviewTest {
 
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
-        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName);
+        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName).perform();
     }
 
     @Test(dependsOnMethods = "searchForProductByName", description ="Verify adding product review for a registered user")
@@ -68,7 +68,7 @@ public class ProductReviewTest {
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
-    @BeforeTest
+    @BeforeClass
     public void setUp(){
         driver = new SHAFT.GUI.WebDriver();
         testData = new SHAFT.TestData.JSON("ProductReviewTestData.json");
@@ -79,7 +79,7 @@ public class ProductReviewTest {
         registerPage = new RegisterPage(driver);
     }
 
-    @AfterTest
+    @AfterClass
     public void tearDown(){
         driver.quit();
     }

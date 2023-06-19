@@ -38,14 +38,14 @@ public class RegisterUserTest {
     @Story("Register")
     public void registerWithExistingEmailAndPw(){
         registerPage    .openRegisterPage();
-        driver          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register");
+        driver          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register").perform();
         registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName"),testData.getTestData("UserInfo.LastName"),email,testData.getTestData("UserInfo.Password"));
         driver          .assertThat().element(registerPage.getRegisteredEmailErrorMsg()).text().contains(testData.getTestData("messages.RegisteredEmail")).perform();
     }
 
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
-    @BeforeTest
+    @BeforeClass
     public void classSetUp(){
         testData = new SHAFT.TestData.JSON("RegisterUserTestData.json");
     }

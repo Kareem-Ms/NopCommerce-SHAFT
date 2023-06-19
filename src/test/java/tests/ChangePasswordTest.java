@@ -17,7 +17,7 @@ public class ChangePasswordTest {
 
     ///////////////////Variables\\\\\\\\\\\\\\\\\\\
 
-    ThreadLocal<SHAFT.GUI.WebDriver> driver = new ThreadLocal<>();
+    SHAFT.GUI.WebDriver driver;
     SHAFT.TestData.JSON testData;
     RegisterPage registerPage;
     LoginPage loginPage;
@@ -34,9 +34,9 @@ public class ChangePasswordTest {
         email = testData.getTestData("UserInfo.Email")+"_"+currentTime+testData.getTestData("UserInfo.Domain");
 
         registerPage    .openRegisterPage();
-        driver.get()          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register").perform();
+        driver          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register").perform();
         registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName"),testData.getTestData("UserInfo.LastName"),email,testData.getTestData("UserInfo.Password"));
-        driver.get()          .assertThat().element(registerPage.getRegisterConfirmationLocator()).text().contains(testData.getTestData("messages.ConfirmRegister")).perform();
+        driver          .assertThat().element(registerPage.getRegisterConfirmationLocator()).text().contains(testData.getTestData("messages.ConfirmRegister")).perform();
         registerPage    .clickContinueBtn();
     }
 
@@ -46,7 +46,7 @@ public class ChangePasswordTest {
     public void loginWithValidEmailAndPassword(){
         loginPage   .openLoginPage();
         loginPage   .login(email, testData.getTestData("UserInfo.Password"));
-        driver.get()      .assertThat().element(homePage.getMyAccountLinkLocator()).isVisible().perform();
+        driver      .assertThat().element(homePage.getMyAccountLinkLocator()).isVisible().perform();
     }
 
     @Test(dependsOnMethods = "loginWithValidEmailAndPassword" , description = "Validate changing account password to a new one")
@@ -54,24 +54,24 @@ public class ChangePasswordTest {
     @Story("Change Password")
     public void VerifyChangingPasswordSuccessfully(){
         changePasswordPage  .openChangePasswordPage();
-        driver.get()              .assertThat().element(changePasswordPage.getChagePasswordTitleLocator()).text().contains(testData.getTestData("UserInfo.ChangePasswordTitle"));
+        driver              .assertThat().element(changePasswordPage.getChagePasswordTitleLocator()).text().contains(testData.getTestData("UserInfo.ChangePasswordTitle")).perform();
         changePasswordPage  .changePassword(testData.getTestData("UserInfo.Password"), testData.getTestData("UserInfo.NewPassword"));
-        driver.get()              .assertThat().element(changePasswordPage.getPasswordChangedMsgLocator()).text().contains(testData.getTestData("messages.PasswordChangedMsg"));
+        driver              .assertThat().element(changePasswordPage.getPasswordChangedMsgLocator()).text().contains(testData.getTestData("messages.PasswordChangedMsg")).perform();
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
-    @BeforeTest
+    @BeforeClass
     public void setUp(){
-        driver.set(new SHAFT.GUI.WebDriver());
-        registerPage = new RegisterPage(driver.get());
-        homePage = new HomePage(driver.get());
-        loginPage = new LoginPage(driver.get());
-        changePasswordPage = new ChangePasswordPage(driver.get());
+        driver = new SHAFT.GUI.WebDriver();
+        registerPage = new RegisterPage(driver);
+        homePage = new HomePage(driver);
+        loginPage = new LoginPage(driver);
+        changePasswordPage = new ChangePasswordPage(driver);
         testData = new SHAFT.TestData.JSON("ChangePasswordTestData.json");
     }
 
-    @AfterTest
+    @AfterClass
     public void tearDown(){
-        driver.get().quit();
+        driver.quit();
     }
 }

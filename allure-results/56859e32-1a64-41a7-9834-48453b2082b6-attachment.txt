@@ -1,0 +1,36 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                       Starting Execution: '11 out of 15' test cases in the current suite                                       
+                                      Test Method: 'tests.RegisterUserTest.registerWithExistingEmailAndPw'                                      
+                                     Test Description: 'Validate registering with already registered email'                                     
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Target URL: "https://demo.nopcommerce.com/register?returnUrl=%2F" @19-06-2023 08:38:28.0197 AM
+[ReportManager] Initial URL: "data:," @19-06-2023 08:38:28.0243 AM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/register?returnUrl=%2F". @19-06-2023 08:38:31.0159 AM
+[ReportManager] Get text "Register" from "By.className: page-title". @19-06-2023 08:38:31.0231 AM
+[ReportManager] Expected "Register", and actual "Register" @19-06-2023 08:38:31.0231 AM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'Register' for the 'text' attribute, element locator 'By.className: page-title'" and Actual "Register". Comparison Type "CONTAINS". Validation Type "POSITIVE". @19-06-2023 08:38:32.0066 AM
+[ReportManager] Assertion Passed: The Element located by "By.className: page-title" text contains "Register". @19-06-2023 08:38:32.0066 AM
+[ReportManager] Successfully created attachment 'Screenshot - 1687156711437_registerWithExistingEmailAndPw_ValidateElementAttribute_passed' @19-06-2023 08:38:32.0068 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @19-06-2023 08:38:32.0068 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @19-06-2023 08:38:32.0068 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @19-06-2023 08:38:32.0084 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @19-06-2023 08:38:32.0084 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @19-06-2023 08:38:32.0100 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @19-06-2023 08:38:32.0100 AM
+[ReportManager] Type "John" into "First name:". @19-06-2023 08:38:32.0247 AM
+[ReportManager] Type "Doe" into "Last name:". @19-06-2023 08:38:32.0375 AM
+[ReportManager] Type "johndoe_19062023083730308@gmail.com" into "Email:". @19-06-2023 08:38:32.0512 AM
+[ReportManager] Type "tester123" into "Password:". @19-06-2023 08:38:32.0623 AM
+[ReportManager] Type "tester123" into "Confirm password:". @19-06-2023 08:38:32.0742 AM
+[ReportManager] Moved the mouse to the middle of the element. @19-06-2023 08:38:32.0903 AM
+[ReportManager] Click "REGISTER". @19-06-2023 08:38:32.0987 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @19-06-2023 08:38:32.0987 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @19-06-2023 08:38:32.0988 AM
+[ReportManager] Get text "The specified email already exists" from "By.className: validation-summary-errors". @19-06-2023 08:38:34.0070 AM
+[ReportManager] Expected "email already exists", and actual "The specified email already exists" @19-06-2023 08:38:34.0071 AM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'email already exists' for the 'text' attribute, element locator 'By.className: validation-summary-errors'" and Actual "The specified email already exists". Comparison Type "CONTAINS". Validation Type "POSITIVE". @19-06-2023 08:38:34.0612 AM
+[ReportManager] Assertion Passed: The Element located by "By.className: validation-summary-errors" text contains "email already exists". @19-06-2023 08:38:34.0612 AM
+[ReportManager] Successfully created attachment 'Screenshot - 1687156714286_registerWithExistingEmailAndPw_ValidateElementAttribute_passed' @19-06-2023 08:38:34.0614 AM
+[ReportManager] Successfully created attachment 'SHAFT Engine Logs - Current Method log: methodSetup' @19-06-2023 08:38:34.0615 AM

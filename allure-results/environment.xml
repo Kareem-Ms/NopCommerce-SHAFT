@@ -38,7 +38,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>C:\Users\usama\AppData\Local\Temp\surefire8910580433200957683\surefirebooter-20230614083939837_3.jar C:\Users\usama\AppData\Local\Temp\surefire8910580433200957683 2023-06-14T08-39-39_691-jvmRun1 surefire-20230614083939837_1tmp surefire_0-20230614083939837_2tmp</value>
+    <value>C:\Users\usama\AppData\Local\Temp\surefire4528041760962471036\surefirebooter-20230619083725411_3.jar C:\Users\usama\AppData\Local\Temp\surefire4528041760962471036 2023-06-19T08-37-25_282-jvmRun1 surefire-20230619083725411_1tmp surefire_0-20230619083725411_2tmp</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>
@@ -69,6 +69,10 @@
     <value>C:\Users\usama\IdeaProjects\NopCommerce-Shaft</value>
   </parameter>
   <parameter>
+    <key>alwaysLogDiscreetly</key>
+    <value>false</value>
+  </parameter>
+  <parameter>
     <key>java.vm.specification.vendor</key>
     <value>Oracle Corporation</value>
   </parameter>
@@ -89,6 +93,10 @@
     <value>HotSpot 64-Bit Tiered Compilers</value>
   </parameter>
   <parameter>
+    <key>generateAllureReportArchive</key>
+    <value>false</value>
+  </parameter>
+  <parameter>
     <key>java.runtime.version</key>
     <value>20.0.1+9-29</value>
   </parameter>
@@ -99,6 +107,10 @@
   <parameter>
     <key>file.encoding</key>
     <value>UTF-8</value>
+  </parameter>
+  <parameter>
+    <key>cleanAllureResultsDirectoryBeforeExecution</key>
+    <value>true</value>
   </parameter>
   <parameter>
     <key>appender.file.filter.threshold.type</key>
@@ -113,8 +125,16 @@
     <value>20.0.1</value>
   </parameter>
   <parameter>
+    <key>openLighthouseReportWhileExecution</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
     <key>java.vm.specification.name</key>
     <value>Java Virtual Machine Specification</value>
+  </parameter>
+  <parameter>
+    <key>attachExtentReportToAllureReport</key>
+    <value>false</value>
   </parameter>
   <parameter>
     <key>native.encoding</key>
@@ -174,7 +194,7 @@
   </parameter>
   <parameter>
     <key>test</key>
-    <value>LoginTest,ChangePasswordTest</value>
+    <value>ChangePasswordTest,ProductReviewTest,WishListTest,SearchTest,RegisterUserTest,LoginTest</value>
   </parameter>
   <parameter>
     <key>user.home</key>
@@ -182,7 +202,7 @@
   </parameter>
   <parameter>
     <key>setThreadCount</key>
-    <value>2</value>
+    <value>1</value>
   </parameter>
   <parameter>
     <key>setGroupByInstances</key>
@@ -199,6 +219,10 @@
   <parameter>
     <key>appender.console.layout.type</key>
     <value>PatternLayout</value>
+  </parameter>
+  <parameter>
+    <key>debugMode</key>
+    <value>false</value>
   </parameter>
   <parameter>
     <key>appender.console.layout.disableAnsi</key>
@@ -246,7 +270,7 @@
   </parameter>
   <parameter>
     <key>setParallel</key>
-    <value>METHODS</value>
+    <value>NONE</value>
   </parameter>
   <parameter>
     <key>java.vm.info</key>
@@ -289,6 +313,10 @@
     <value>Usama</value>
   </parameter>
   <parameter>
+    <key>cleanExtentReportsDirectoryBeforeExecution</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
     <key>localRepository</key>
     <value>C:\Users\usama\.m2\repository</value>
   </parameter>
@@ -305,6 +333,10 @@
     <value>Oracle Corporation</value>
   </parameter>
   <parameter>
+    <key>openAllureReportAfterExecution</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
     <key>sun.java.launcher</key>
     <value>SUN_STANDARD</value>
   </parameter>
@@ -315,6 +347,10 @@
   <parameter>
     <key>nopCommerce.baseuri</key>
     <value>https://demo.nopcommerce.com/</value>
+  </parameter>
+  <parameter>
+    <key>openExecutionSummaryReportAfterExecution</key>
+    <value>false</value>
   </parameter>
   <parameter>
     <key>cucumber.snippet-type</key>
@@ -342,11 +378,15 @@
   </parameter>
   <parameter>
     <key>surefire.real.class.path</key>
-    <value>C:\Users\usama\AppData\Local\Temp\surefire8910580433200957683\surefirebooter-20230614083939837_3.jar</value>
+    <value>C:\Users\usama\AppData\Local\Temp\surefire4528041760962471036\surefirebooter-20230619083725411_3.jar</value>
   </parameter>
   <parameter>
     <key>java.runtime.name</key>
     <value>Java(TM) SE Runtime Environment</value>
+  </parameter>
+  <parameter>
+    <key>generateExtentReports</key>
+    <value>true</value>
   </parameter>
   <parameter>
     <key>logger.app.name</key>
@@ -357,12 +397,20 @@
     <value>https://bugreport.java.com/bugreport/</value>
   </parameter>
   <parameter>
+    <key>captureElementName</key>
+    <value>true</value>
+  </parameter>
+  <parameter>
     <key>user.dir</key>
     <value>C:\Users\usama\IdeaProjects\NopCommerce-Shaft</value>
   </parameter>
   <parameter>
     <key>appender.file.filter.threshold.level</key>
     <value>debug</value>
+  </parameter>
+  <parameter>
+    <key>captureWebDriverLogs</key>
+    <value>false</value>
   </parameter>
   <parameter>
     <key>setDataProviderThreadCount</key>

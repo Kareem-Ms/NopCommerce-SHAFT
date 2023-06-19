@@ -28,7 +28,7 @@ public class WishListTest {
 
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
-        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName);
+        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName).perform();
     }
 
 
@@ -51,7 +51,7 @@ public class WishListTest {
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
-    @BeforeTest
+    @BeforeClass
     public void setUp(){
         driver = new SHAFT.GUI.WebDriver();
         testData = new SHAFT.TestData.JSON("WishListTestData.json");
@@ -61,7 +61,7 @@ public class WishListTest {
         homePage.navigateToHomePage();
     }
 
-    @AfterTest
+    @AfterClass
     public void tearDowm(){
         driver.quit();
     }
