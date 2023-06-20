@@ -1,0 +1,41 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '6 out of 15' test cases in the current suite                                        
+                                       Test Method: 'tests.ProductReviewTest.registerWithValidEmailAndPw'                                       
+                                  Test Description: 'Validate registering a user with valid email and password'                                  
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:00.0752 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:00.0754 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:00.0796 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:00.0796 AM
+[ReportManager] Target URL: "https://demo.nopcommerce.com/register?returnUrl=%2F" @19-06-2023 08:38:00.0825 AM
+[ReportManager] Initial URL: "data:," @19-06-2023 08:38:00.0890 AM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/register?returnUrl=%2F". @19-06-2023 08:38:04.0516 AM
+[ReportManager] Get text "Register" from "By.className: page-title". @19-06-2023 08:38:04.0589 AM
+[ReportManager] Expected "Register", and actual "Register" @19-06-2023 08:38:04.0589 AM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'Register' for the 'text' attribute, element locator 'By.className: page-title'" and Actual "Register". Comparison Type "CONTAINS". Validation Type "POSITIVE". @19-06-2023 08:38:05.0169 AM
+[ReportManager] Assertion Passed: The Element located by "By.className: page-title" text contains "Register". @19-06-2023 08:38:05.0169 AM
+[ReportManager] Successfully created attachment 'Screenshot - 1687156684783_registerWithValidEmailAndPw_ValidateElementAttribute_passed' @19-06-2023 08:38:05.0171 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:05.0171 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:05.0171 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:05.0186 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:05.0186 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:05.0201 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:05.0201 AM
+[ReportManager] Type "John" into "First name:". @19-06-2023 08:38:05.0353 AM
+[ReportManager] Type "Doe" into "Last name:". @19-06-2023 08:38:05.0474 AM
+[ReportManager] Type "johndoe_19062023083730302@gmail.com" into "Email:". @19-06-2023 08:38:05.0622 AM
+[ReportManager] Type "tester123" into "Password:". @19-06-2023 08:38:05.0742 AM
+[ReportManager] Type "tester123" into "Confirm password:". @19-06-2023 08:38:05.0863 AM
+[ReportManager] Moved the mouse to the middle of the element. @19-06-2023 08:38:06.0042 AM
+[ReportManager] Click "REGISTER". @19-06-2023 08:38:06.0129 AM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:06.0130 AM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @19-06-2023 08:38:06.0130 AM
+[ReportManager] Get text "Your registration completed" from "By.className: result". @19-06-2023 08:38:06.0902 AM
+[ReportManager] Expected "Your registration completed", and actual "Your registration completed" @19-06-2023 08:38:06.0903 AM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'Your registration completed' for the 'text' attribute, element locator 'By.className: result'" and Actual "Your registration completed". Comparison Type "CONTAINS". Validation Type "POSITIVE". @19-06-2023 08:38:07.0308 AM
+[ReportManager] Assertion Passed: The Element located by "By.className: result" text contains "Your registration completed". @19-06-2023 08:38:07.0309 AM
+[ReportManager] Successfully created attachment 'Screenshot - 1687156687058_registerWithValidEmailAndPw_ValidateElementAttribute_passed' @19-06-2023 08:38:07.0310 AM
+[ReportManager] Moved the mouse to the middle of the element. @19-06-2023 08:38:07.0475 AM
+[ReportManager] Click "CONTINUE". @19-06-2023 08:38:07.0504 AM

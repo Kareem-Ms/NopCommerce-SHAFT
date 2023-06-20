@@ -4,19 +4,19 @@ import com.shaft.driver.SHAFT;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.ChangePasswordPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.RegisterPage;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ChangePasswordTest {
 
     ///////////////////Variables\\\\\\\\\\\\\\\\\\\
+
     SHAFT.GUI.WebDriver driver;
     SHAFT.TestData.JSON testData;
     RegisterPage registerPage;
@@ -24,7 +24,7 @@ public class ChangePasswordTest {
     HomePage homePage;
     ChangePasswordPage changePasswordPage;
     String email;
-    String currentTime = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+    String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
     @Test(description = "Validate registering a user with valid email and password")
@@ -54,9 +54,9 @@ public class ChangePasswordTest {
     @Story("Change Password")
     public void VerifyChangingPasswordSuccessfully(){
         changePasswordPage  .openChangePasswordPage();
-        driver              .assertThat().element(changePasswordPage.getChagePasswordTitleLocator()).text().contains(testData.getTestData("UserInfo.ChangePasswordTitle"));
+        driver              .assertThat().element(changePasswordPage.getChagePasswordTitleLocator()).text().contains(testData.getTestData("UserInfo.ChangePasswordTitle")).perform();
         changePasswordPage  .changePassword(testData.getTestData("UserInfo.Password"), testData.getTestData("UserInfo.NewPassword"));
-        driver              .assertThat().element(changePasswordPage.getPasswordChangedMsgLocator()).text().contains(testData.getTestData("messages.PasswordChangedMsg"));
+        driver              .assertThat().element(changePasswordPage.getPasswordChangedMsgLocator()).text().contains(testData.getTestData("messages.PasswordChangedMsg")).perform();
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\

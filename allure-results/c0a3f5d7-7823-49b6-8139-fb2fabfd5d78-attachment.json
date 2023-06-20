@@ -1,0 +1,12 @@
+{
+  "UserInfo": {
+    "FirstName": "John",
+    "LastName": "Doe",
+    "Email": "johndoe",
+    "Domain": "@gmail.com",
+    "Password": "tester123"
+  },
+  "messages": {
+    "ConfirmRegister": "Your registration completed"
+  }
+}

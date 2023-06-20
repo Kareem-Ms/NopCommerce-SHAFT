@@ -4,12 +4,11 @@ import com.shaft.driver.SHAFT;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.*;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ProductReviewTest {
 
@@ -22,7 +21,7 @@ public class ProductReviewTest {
     LoginPage loginPage;
     RegisterPage registerPage;
     String email;
-    String currentTime = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+    String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
     @Test(description = "Validate registering a user with valid email and password")
@@ -46,6 +45,7 @@ public class ProductReviewTest {
         loginPage       .login(email, testData.getTestData("UserInfo.Password"));
         driver          .assertThat().element(homePage.getMyAccountLinkLocator()).isVisible().perform();
     }
+
     @Test(description = "Verify Searching for specific product and viewing it's product page")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Search for product")
@@ -54,7 +54,7 @@ public class ProductReviewTest {
 
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
-        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName);
+        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName).perform();
     }
 
     @Test(dependsOnMethods = "searchForProductByName", description ="Verify adding product review for a registered user")
@@ -85,4 +85,3 @@ public class ProductReviewTest {
     }
 
 }
-

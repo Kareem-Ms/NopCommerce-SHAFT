@@ -2,9 +2,7 @@ package tests;
 
 import com.shaft.driver.SHAFT;
 import io.qameta.allure.*;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 import pages.ProductDetailsPage;
 import pages.WishListPage;
@@ -30,7 +28,7 @@ public class WishListTest {
 
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
-        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName);
+        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName).perform();
     }
 
 
