@@ -7,7 +7,7 @@ import io.qameta.allure.Story;
 import org.testng.annotations.*;
 import pages.RegisterPage;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Calendar;
 
 public class RegisterUserTest {
 
@@ -16,9 +16,7 @@ public class RegisterUserTest {
     SHAFT.TestData.JSON testData;
     RegisterPage registerPage;
     String email;
-    String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
-
-
+    String currentTime;
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
     @Test(description = "Validate registering a user with valid email and password")
@@ -43,11 +41,11 @@ public class RegisterUserTest {
         driver          .assertThat().element(registerPage.getRegisteredEmailErrorMsg()).text().contains(testData.getTestData("messages.RegisteredEmail")).perform();
     }
 
-
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
     @BeforeClass
     public void classSetUp(){
         testData = new SHAFT.TestData.JSON("RegisterUserTestData.json");
+        currentTime = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(Calendar.getInstance().getTime());
     }
 
     @BeforeMethod

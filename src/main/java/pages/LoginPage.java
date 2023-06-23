@@ -27,9 +27,10 @@ public class LoginPage {
 
     @Step("Login with Email:[{email}] ,Password [{password}]")
     public void login(String email, String password){
-        driver.element().type(EmailInputLocator, email);
-        driver.element().type(PasswordInputLocator, password);
-        driver.element().click(LoginButton);
+        driver.element()
+                .type(EmailInputLocator, email)
+                .type(PasswordInputLocator, password)
+                .click(LoginButton);
     }
 
 }

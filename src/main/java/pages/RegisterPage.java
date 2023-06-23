@@ -34,12 +34,13 @@ public class RegisterPage {
     }
     @Step("Register user with First Name: [{FirstName}] , Last Name: [{LastName}], Email: [{Email}], Password: [{Password}]")
     public void RegisterUser(String FirstName, String LastName, String Email, String Password){
-        driver.element().type(FirstNameInputLocator, FirstName);
-        driver.element().type(LastNameInputLocator, LastName);
-        driver.element().type(EmailInputLocator, Email);
-        driver.element().type(PasswordInputLocator, Password);
-        driver.element().type(ConfirmPasswordInputLocator, Password);
-        driver.element().click(RegisterButtonLocator);
+        driver.element()
+                .type(FirstNameInputLocator, FirstName)
+                .type(LastNameInputLocator, LastName)
+                .type(EmailInputLocator, Email)
+                .type(PasswordInputLocator, Password)
+                .type(ConfirmPasswordInputLocator, Password)
+                .click(RegisterButtonLocator);
     }
 
     @Step("Get register title locator")

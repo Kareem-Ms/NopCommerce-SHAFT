@@ -8,7 +8,7 @@ public class ChangePasswordPage {
 
     /////////////////Variables\\\\\\\\\\\\\\\\\\
     SHAFT.GUI.WebDriver driver;
-    String ChangePasswordPageUrl = System.getProperty("nopCommerce.baseuri")+"customer\\changepassword";
+    String ChangePasswordPageUrl = System.getProperty("nopCommerce.baseuri")+"customer/changepassword";
 
     public ChangePasswordPage(SHAFT.GUI.WebDriver driver){
         this.driver = driver;
@@ -30,10 +30,11 @@ public class ChangePasswordPage {
 
     @Step("Change password from currentPassword:[{CurrentPassword}] to New password: [{NewPassword}]")
     public void changePassword(String CurrentPassword, String NewPassword){
-        driver.element().type(OldPasswordLocator, CurrentPassword);
-        driver.element().type(NewPasswordLinkLocator, NewPassword);
-        driver.element().type(ConfirmPasswordLinkLocator, NewPassword);
-        driver.element().click(ChangePasswordBtn);
+        driver.element()
+                .type(OldPasswordLocator, CurrentPassword)
+                .type(NewPasswordLinkLocator, NewPassword)
+                .type(ConfirmPasswordLinkLocator, NewPassword)
+                .click(ChangePasswordBtn);
     }
 
     @Step("get Password changed message locator")

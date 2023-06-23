@@ -1,0 +1,19 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Starting Execution: '8 out of 15' test cases in the current suite                                        
+                                          Test Method: 'tests.ProductReviewTest.searchForProductByName'                                          
+                             Test Description: 'Verify Searching for specific product and viewing it's product page'                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @23-06-2023 18:01:51.0786 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/ProductReviewTestData.json"". @23-06-2023 18:01:51.0786 PM
+[ReportManager] Type "MacBook" into "Search store". @23-06-2023 18:01:51.0910 PM
+[ReportManager] Moved the mouse to the middle of the element. @23-06-2023 18:01:52.0066 PM
+[ReportManager] Click "SEARCH". @23-06-2023 18:01:52.0134 PM
+[ReportManager] Moved the mouse to the middle of the element. @23-06-2023 18:01:53.0505 PM
+[ReportManager] Click "Apple MacBook Pro 13-inch". @23-06-2023 18:01:53.0565 PM
+[ReportManager] Get text "Apple MacBook Pro 13-inch" from "By.className: product-name". @23-06-2023 18:01:54.0566 PM
+[ReportManager] Expected "MacBook", and actual "Apple MacBook Pro 13-inch" @23-06-2023 18:01:54.0566 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'MacBook' for the 'text' attribute, element locator 'By.className: product-name'" and Actual "Apple MacBook Pro 13-inch". Comparison Type "CONTAINS". Validation Type "POSITIVE". @23-06-2023 18:01:57.0180 PM
+[ReportManager] Assertion Passed: The Element located by "By.className: product-name" text contains "MacBook". @23-06-2023 18:01:57.0180 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1687536115333_searchForProductByName_ValidateElementAttribute_passed' @23-06-2023 18:01:57.0196 PM

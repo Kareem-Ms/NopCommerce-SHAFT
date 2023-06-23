@@ -11,7 +11,8 @@ import pages.LoginPage;
 import pages.RegisterPage;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Calendar;
+
 
 public class ChangePasswordTest {
 
@@ -24,7 +25,8 @@ public class ChangePasswordTest {
     HomePage homePage;
     ChangePasswordPage changePasswordPage;
     String email;
-    String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
+    String currentTime;
+
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
     @Test(description = "Validate registering a user with valid email and password")
@@ -68,6 +70,7 @@ public class ChangePasswordTest {
         loginPage = new LoginPage(driver);
         changePasswordPage = new ChangePasswordPage(driver);
         testData = new SHAFT.TestData.JSON("ChangePasswordTestData.json");
+        currentTime = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(Calendar.getInstance().getTime());
     }
 
     @AfterClass

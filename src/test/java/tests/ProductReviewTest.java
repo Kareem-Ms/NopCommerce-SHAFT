@@ -8,7 +8,8 @@ import org.testng.annotations.*;
 import pages.*;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Calendar;
+
 
 public class ProductReviewTest {
 
@@ -21,7 +22,7 @@ public class ProductReviewTest {
     LoginPage loginPage;
     RegisterPage registerPage;
     String email;
-    String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
+    String currentTime;
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
     @Test(description = "Validate registering a user with valid email and password")
@@ -77,6 +78,7 @@ public class ProductReviewTest {
         productReviewPage = new ProductReviewPage(driver);
         loginPage = new LoginPage(driver);
         registerPage = new RegisterPage(driver);
+        currentTime = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(Calendar.getInstance().getTime());
     }
 
     @AfterClass

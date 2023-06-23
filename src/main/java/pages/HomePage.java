@@ -27,8 +27,8 @@ public class HomePage {
 
     @Step("Search for specific product using the first 4 characters")
     public void searchForProduct(String ProductName){
-        driver.element().type(SearchBarLocator,ProductName);
-        driver.element().click(SubmitSearchBtn);
+        driver.element().type(SearchBarLocator,ProductName)
+                        .click(SubmitSearchBtn);
     }
 
     @Step("return My account link locator")

@@ -1,0 +1,2 @@
+[ReportManager] Successfully Closed Driver. @23-06-2023 18:02:13.0992 PM
+[ReportManager] Driver is already closed. @23-06-2023 18:02:13.0992 PM

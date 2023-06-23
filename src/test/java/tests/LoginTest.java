@@ -9,7 +9,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.RegisterPage;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Calendar;
 
 public class LoginTest {
 
@@ -20,7 +20,7 @@ public class LoginTest {
     LoginPage loginPage;
     HomePage homePage;
     String email;
-   String currentTime = new SimpleDateFormat("ddMMyyyyHHmmssSSS").format(new Date());
+    String currentTime;
 
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
@@ -55,7 +55,7 @@ public class LoginTest {
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         testData = new SHAFT.TestData.JSON("LoginTestData.json");
-
+        currentTime = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(Calendar.getInstance().getTime());
     }
 
     @AfterClass

@@ -25,10 +25,11 @@ public class ProductReviewPage {
     public void addProductReview(String ReviewTitle, String ReviewText, String RatingVlaue){
         By ratingLocator = By.cssSelector("input[value = '"+RatingVlaue+"']");
 
-        driver.element().type(ProductReviewTitleInputLocator, ReviewTitle);
-        driver.element().type(ProductReviewTextInputLocator, ReviewText);
-        driver.element().click(ratingLocator);
-        driver.element().click(SubmitReviewBtnLocator);
+        driver.element()
+                .type(ProductReviewTitleInputLocator, ReviewTitle)
+                .type(ProductReviewTextInputLocator, ReviewText)
+                .click(ratingLocator)
+                .click(SubmitReviewBtnLocator);
     }
 
     public By getProductReviewTitleLocator(){
