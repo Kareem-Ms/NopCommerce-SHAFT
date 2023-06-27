@@ -1,0 +1,19 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                       Starting Execution: '14 out of 15' test cases in the current suite                                       
+                                         Test Method: 'tests.WishListTest.verifyAddingProductToWishlist'                                         
+                                           Test Description: 'Verify adding product for the wishlist'                                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Moved the mouse to the middle of the element. @27-06-2023 15:06:26.0393 PM
+[ReportManager] Click "Add to wishlist". @27-06-2023 15:06:26.0465 PM
+[ReportManager] Target URL: "https://demo.nopcommerce.com/wishlist" @27-06-2023 15:06:27.0042 PM
+[ReportManager] Initial URL: "https://demo.nopcommerce.com/apple-macbook-pro-13-inch" @27-06-2023 15:06:27.0081 PM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/wishlist". @27-06-2023 15:06:27.0516 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/WishListTestData.json"". @27-06-2023 15:06:27.0517 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/WishListTestData.json"". @27-06-2023 15:06:27.0518 PM
+[ReportManager] Get text "Apple MacBook Pro 13-inch" from "Apple MacBook Pro 13-inch". @27-06-2023 15:06:27.0643 PM
+[ReportManager] Expected "MacBook", and actual "Apple MacBook Pro 13-inch" @27-06-2023 15:06:27.0643 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'MacBook' for the 'text' attribute, element locator 'By.xpath: //a[@class = 'product-name' ] [contains(text() , 'MacBook')]'" and Actual "Apple MacBook Pro 13-inch". Comparison Type "CONTAINS". Validation Type "POSITIVE". @27-06-2023 15:06:28.0704 PM
+[ReportManager] Assertion Passed: check if the product got added to wishlist successfully @27-06-2023 15:06:28.0704 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1687871188024_verifyAddingProductToWishlist_ValidateElementAttribute_passed' @27-06-2023 15:06:28.0720 PM

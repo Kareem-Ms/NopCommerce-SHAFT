@@ -22,6 +22,7 @@ public class ProductReviewTest {
     LoginPage loginPage;
     RegisterPage registerPage;
     String email;
+    String ProductName;
     String currentTime;
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
@@ -32,9 +33,11 @@ public class ProductReviewTest {
         email = testData.getTestData("UserInfo.Email")+"_"+currentTime+testData.getTestData("UserInfo.Domain");
 
         registerPage    .openRegisterPage();
-        driver          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register").perform();
-        registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName"),testData.getTestData("UserInfo.LastName"),email,testData.getTestData("UserInfo.Password"));
-        driver          .assertThat().element(registerPage.getRegisterConfirmationLocator()).text().contains(testData.getTestData("messages.ConfirmRegister")).perform();
+        registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName")
+                                     ,testData.getTestData("UserInfo.LastName")
+                                     ,email,testData.getTestData("UserInfo.Password"));
+
+        checkSuccessfullRegistration();
         registerPage    .clickContinueBtn();
     }
 
@@ -44,18 +47,19 @@ public class ProductReviewTest {
     public void loginWithValidEmailAndPassword(){
         loginPage       .openLoginPage();
         loginPage       .login(email, testData.getTestData("UserInfo.Password"));
-        driver          .assertThat().element(homePage.getMyAccountLinkLocator()).isVisible().perform();
+
+        checkSuccessfullLogin();
     }
 
     @Test(description = "Verify Searching for specific product and viewing it's product page")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Search for product")
     public void searchForProductByName(){
-        String ProductName = testData.getTestData("ProductName");
-
+        ProductName = testData.getTestData("ProductName");
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
-        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName).perform();
+
+        checkPrdouctNameInProductDetailsPage();
     }
 
     @Test(dependsOnMethods = "searchForProductByName", description ="Verify adding product review for a registered user")
@@ -63,9 +67,11 @@ public class ProductReviewTest {
     @Story("Add product Review")
     public void addProductReviewByRegisteredUser(){
         productDetailsPage  .openProductReviewsPage();
-        driver              .assertThat().element(productReviewPage.getProductReviewTitleLocator()).text().contains(testData.getTestData("ProductReviewTitle")).perform();
-        productReviewPage   .addProductReview(testData.getTestData("ProductReviewTitle"),testData.getTestData("ProductReviewText"),testData.getTestData("ProductRating"));
-        driver              .assertThat().element(productReviewPage.getProductReviewAddMsgLocator()).text().contains(testData.getTestData("ProductReviewAddedMsg")).perform();
+        productReviewPage   .addProductReview(testData.getTestData("ProductReviewTitle")
+                                             ,testData.getTestData("ProductReviewText")
+                                             ,testData.getTestData("ProductRating"));
+
+        checkSuccessfullyAddingProductReview();
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
@@ -86,4 +92,41 @@ public class ProductReviewTest {
         driver.quit();
     }
 
+    /////////////////Assertions\\\\\\\\\\\\\\\\\\
+
+    public void checkPrdouctNameInProductDetailsPage(){
+        driver.assertThat()
+                .element(productDetailsPage.getProductTitleLocator())
+                .text()
+                .contains(ProductName)
+                .withCustomReportMessage("Check if product name displayed on opening product details page")
+                .perform();
+    }
+
+    public void checkSuccessfullRegistration(){
+        driver.assertThat()
+                .element(registerPage.getRegisterConfirmationLocator())
+                .text()
+                .contains(testData.getTestData("messages.ConfirmRegister"))
+                .withCustomReportMessage("check if the desired registration message exists")
+                .perform();
+    }
+
+    public void checkSuccessfullLogin(){
+        driver.assertThat()
+                .element(homePage.getMyAccountLinkLocator())
+                .isVisible()
+                .withCustomReportMessage("Check if My account link appears to verify login")
+                .perform();
+    }
+
+    public void checkSuccessfullyAddingProductReview(){
+        driver.assertThat()
+                .element(productReviewPage.getProductReviewAddMsgLocator())
+                .text()
+                .contains(testData.getTestData("ProductReviewAddedMsg"))
+                .withCustomReportMessage("check if the product review got added successfully")
+                .perform();
+
+    }
 }

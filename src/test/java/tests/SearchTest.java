@@ -15,17 +15,18 @@ public class SearchTest {
     SHAFT.TestData.JSON testData;
     HomePage homePage;
     ProductDetailsPage productDetailsPage;
+    String ProductName;
 
     /////////////////////Tests\\\\\\\\\\\\\\\\\\\\\\
     @Test(description = "Verify Searching for specific product and viewing it's product page")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Search for product")
     public void searchForProductByName(){
-        String ProductName = testData.getTestData("ProductName");
-
+        ProductName = testData.getTestData("ProductName");
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
-        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName).perform();
+
+        checkPrdouctNameInProductDetailsPage();
     }
 
 
@@ -42,6 +43,17 @@ public class SearchTest {
     @AfterClass
     public void tearDowm(){
         driver.quit();
+    }
+
+    /////////////////Assertions\\\\\\\\\\\\\\\\\\
+
+    public void checkPrdouctNameInProductDetailsPage(){
+        driver.assertThat()
+                .element(productDetailsPage.getProductTitleLocator())
+                .text()
+                .contains(ProductName)
+                .withCustomReportMessage("Check if product name displayed on opening product details page")
+                .perform();
     }
 
 }

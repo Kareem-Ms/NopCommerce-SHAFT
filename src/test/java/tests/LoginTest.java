@@ -31,9 +31,11 @@ public class LoginTest {
         email = testData.getTestData("UserInfo.Email")+"_"+currentTime+testData.getTestData("UserInfo.Domain");
 
         registerPage    .openRegisterPage();
-        driver          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register").perform();
-        registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName"),testData.getTestData("UserInfo.LastName"),email,testData.getTestData("UserInfo.Password"));
-        driver          .assertThat().element(registerPage.getRegisterConfirmationLocator()).text().contains(testData.getTestData("messages.ConfirmRegister")).perform();
+        registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName")
+                                     ,testData.getTestData("UserInfo.LastName")
+                                     ,email,testData.getTestData("UserInfo.Password"));
+
+        checkSuccessfullRegistration();
         registerPage    .clickContinueBtn();
     }
 
@@ -43,7 +45,8 @@ public class LoginTest {
     public void loginWithValidEmailAndPassword(){
         loginPage   .openLoginPage();
         loginPage   .login(email, testData.getTestData("UserInfo.Password"));
-        driver      .assertThat().element(homePage.getMyAccountLinkLocator()).isVisible().perform();
+
+        checkSuccessfullLogin();
     }
 
 
@@ -61,5 +64,24 @@ public class LoginTest {
     @AfterClass
     public void tearDown(){
         driver.quit();
+    }
+
+    /////////////////Assertions\\\\\\\\\\\\\\\\\\
+
+    public void checkSuccessfullRegistration(){
+        driver.assertThat()
+                .element(registerPage.getRegisterConfirmationLocator())
+                .text()
+                .contains(testData.getTestData("messages.ConfirmRegister"))
+                .withCustomReportMessage("check if the desired registration message exists")
+                .perform();
+    }
+
+    public void checkSuccessfullLogin(){
+        driver.assertThat()
+                .element(homePage.getMyAccountLinkLocator())
+                .isVisible()
+                .withCustomReportMessage("Check if My account link appears to verify login")
+                .perform();
     }
 }

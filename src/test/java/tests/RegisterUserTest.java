@@ -24,10 +24,13 @@ public class RegisterUserTest {
     @Story("Register")
     public void registerWithValidEmailAndPw(){
         email = testData.getTestData("UserInfo.Email")+"_"+currentTime+testData.getTestData("UserInfo.Domain");
+
         registerPage    .openRegisterPage();
-        driver          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register").perform();
-        registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName"),testData.getTestData("UserInfo.LastName"),email,testData.getTestData("UserInfo.Password"));
-        driver          .assertThat().element(registerPage.getRegisterConfirmationLocator()).text().contains(testData.getTestData("messages.ConfirmRegister")).perform();
+        registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName")
+                ,testData.getTestData("UserInfo.LastName")
+                ,email,testData.getTestData("UserInfo.Password"));
+
+        checkSuccessfullRegistration();
         registerPage    .clickContinueBtn();
     }
 
@@ -36,9 +39,9 @@ public class RegisterUserTest {
     @Story("Register")
     public void registerWithExistingEmailAndPw(){
         registerPage    .openRegisterPage();
-        driver          .assertThat().element(registerPage.getRegisterTitleLocator()).text().contains("Register").perform();
         registerPage    .RegisterUser(testData.getTestData("UserInfo.FirstName"),testData.getTestData("UserInfo.LastName"),email,testData.getTestData("UserInfo.Password"));
-        driver          .assertThat().element(registerPage.getRegisteredEmailErrorMsg()).text().contains(testData.getTestData("messages.RegisteredEmail")).perform();
+
+        checkFailedRegistrationWithAnExistingEmail();
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
@@ -57,5 +60,26 @@ public class RegisterUserTest {
     @AfterMethod
     public void methodTearDown(){
         driver.quit();
+    }
+
+    /////////////////Assertions\\\\\\\\\\\\\\\\\\
+
+    public void checkSuccessfullRegistration(){
+        driver.assertThat()
+                .element(registerPage.getRegisterConfirmationLocator())
+                .text()
+                .contains(testData.getTestData("messages.ConfirmRegister"))
+                .withCustomReportMessage("check if the desired registration message exists")
+                .perform();
+    }
+
+    public void checkFailedRegistrationWithAnExistingEmail(){
+        driver.assertThat()
+                .element(registerPage.getRegisteredEmailErrorMsg())
+                .text()
+                .contains(testData.getTestData("messages.RegisteredEmail"))
+                .withCustomReportMessage("check that email already registered message exist")
+                .perform();
+
     }
 }

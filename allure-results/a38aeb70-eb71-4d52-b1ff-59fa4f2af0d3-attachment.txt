@@ -1,0 +1,13 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                       Starting Execution: '15 out of 15' test cases in the current suite                                       
+                                       Test Method: 'tests.WishListTest.verifyDeletingProductFromWishList'                                       
+                                    Test Description: 'Verify deleting product from wishlist after adding it'                                    
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Moved the mouse to the middle of the element. @27-06-2023 15:06:28.0958 PM
+[ReportManager] Click "By.xpath: //a[@class = 'product-name' ] [contains(text() , 'MacBook')]/parent::td//following-sibling::td[@class = 'remove-from-cart']//button". @27-06-2023 15:06:29.0016 PM
+[ReportManager] Expected condition failed: waiting for com.shaft.gui.element.internal.ElementActionsHelper$$Lambda$1010/0x000000080122e628@6e1ece3d (tried for 60 second(s) with 100 milliseconds interval) || no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class = 'product-name' ] [contains(text() , 'MacBook')]"} @27-06-2023 15:07:29.0530 PM
+[ReportManager] Assertion "ValidateElementExists" PASSED. Expected "Element Should not Exist, locator 'By.xpath: //a[@class = 'product-name' ] [contains(text() , 'MacBook')]'" and Actual "Element Doesn't Exists". Comparison Type "EQUALS". Validation Type "NEGATIVE". @27-06-2023 15:07:30.0102 PM
+[ReportManager] Assertion Passed: check that product name doesn't appear in wishlist after deleting it @27-06-2023 15:07:30.0102 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1687871249670_verifyDeletingProductFromWishList_ValidateElementExists_passed' @27-06-2023 15:07:30.0102 PM

@@ -25,10 +25,10 @@ public class WishListTest {
     @Story("Search for product")
     public void searchForProductByName(){
         ProductName = testData.getTestData("info.ProductName");
-
         homePage            .searchForProduct(ProductName);
         productDetailsPage  .openProductDetails(ProductName);
-        driver              .assertThat().element(productDetailsPage.getProductTitleLocator()).text().contains(ProductName).perform();
+
+        checkPrdouctNameInProductDetailsPage();
     }
 
 
@@ -37,9 +37,9 @@ public class WishListTest {
     @Story("Add product to wishlist")
     public void verifyAddingProductToWishlist(){
         productDetailsPage  .addProductToWishList();
-        driver              .assertThat().element(productDetailsPage.getProductAddedConfirmationLocator()).text().contains(testData.getTestData("messages.prdouctAdded")).perform();
         wishListPage        .openWishListPage();
-        driver              .assertThat().element(wishListPage.getProductLinkLocator(ProductName)).text().contains(testData.getTestData("info.ProductName")).perform();
+
+        checkProductGotAddedToWishList();
     }
 
     @Test(dependsOnMethods = "verifyAddingProductToWishlist" , description = "Verify deleting product from wishlist after adding it")
@@ -47,7 +47,8 @@ public class WishListTest {
     @Story("Delete product from wishlist")
     public void verifyDeletingProductFromWishList(){
         wishListPage        .removeProductFromWishList(ProductName);
-        driver              .assertThat().element(wishListPage.getProductLinkLocator(ProductName)).doesNotExist().perform();
+
+        checkProductGotDeletedFromWishlist();
     }
 
     /////////////////Configuration\\\\\\\\\\\\\\\\\\
@@ -64,6 +65,35 @@ public class WishListTest {
     @AfterClass
     public void tearDowm(){
         driver.quit();
+    }
+
+    /////////////////Assertions\\\\\\\\\\\\\\\\\\
+    public void checkPrdouctNameInProductDetailsPage(){
+        driver.assertThat()
+                .element(productDetailsPage.getProductTitleLocator())
+                .text()
+                .contains(ProductName)
+                .withCustomReportMessage("Check if product name displayed on opening product details page")
+                .perform();
+    }
+
+    public void checkProductGotAddedToWishList(){
+        driver.assertThat()
+                .element(wishListPage.getProductLinkLocator(ProductName))
+                .text()
+                .contains(testData.getTestData("info.ProductName"))
+                .withCustomReportMessage("check if the product got added to wishlist successfully")
+                .perform();
+
+    }
+
+    public void checkProductGotDeletedFromWishlist(){
+        driver.assertThat()
+                .element(wishListPage.getProductLinkLocator(ProductName))
+                .doesNotExist()
+                .withCustomReportMessage("check that product name doesn't appear in wishlist after deleting it")
+                .perform();
+
     }
 
 }

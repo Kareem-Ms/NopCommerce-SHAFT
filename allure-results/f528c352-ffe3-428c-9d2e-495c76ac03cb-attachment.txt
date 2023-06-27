@@ -1,0 +1,8 @@
+[ReportManager] Setting "targetOperatingSystem" property with "WINDOWS". @27-06-2023 15:05:45.0837 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"". @27-06-2023 15:05:45.0837 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"". @27-06-2023 15:05:45.0837 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"". @27-06-2023 15:05:45.0852 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"". @27-06-2023 15:05:45.0852 PM
+[ReportManager] Attempting to run locally on: "WINDOWS | Chrome", Headless Execution. @27-06-2023 15:05:45.0852 PM
+[ReportManager] Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @27-06-2023 15:05:45.0852 PM
+[ReportManager] Successfully Opened: "WINDOWS | Chrome", Headless Execution. @27-06-2023 15:05:47.0101 PM

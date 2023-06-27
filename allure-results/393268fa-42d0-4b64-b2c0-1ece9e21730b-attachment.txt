@@ -1,0 +1,31 @@
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                       Starting Execution: '11 out of 15' test cases in the current suite                                       
+                                      Test Method: 'tests.RegisterUserTest.registerWithExistingEmailAndPw'                                      
+                                     Test Description: 'Validate registering with already registered email'                                     
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+[ReportManager] Target URL: "https://demo.nopcommerce.com/register?returnUrl=%2F" @27-06-2023 15:05:47.0376 PM
+[ReportManager] Initial URL: "data:," @27-06-2023 15:05:47.0404 PM
+[ReportManager] Navigate to url "https://demo.nopcommerce.com/register?returnUrl=%2F". @27-06-2023 15:05:50.0658 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @27-06-2023 15:05:50.0658 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @27-06-2023 15:05:50.0658 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @27-06-2023 15:05:50.0674 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @27-06-2023 15:05:50.0674 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @27-06-2023 15:05:50.0705 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @27-06-2023 15:05:50.0705 PM
+[ReportManager] Type "John" into "First name:". @27-06-2023 15:05:51.0015 PM
+[ReportManager] Type "Doe" into "Last name:". @27-06-2023 15:05:51.0243 PM
+[ReportManager] Type "johndoe_20230627150531154@gmail.com" into "Email:". @27-06-2023 15:05:51.0469 PM
+[ReportManager] Type "tester123" into "Password:". @27-06-2023 15:05:51.0673 PM
+[ReportManager] Type "tester123" into "Confirm password:". @27-06-2023 15:05:51.0875 PM
+[ReportManager] Moved the mouse to the middle of the element. @27-06-2023 15:05:52.0061 PM
+[ReportManager] Click "REGISTER". @27-06-2023 15:05:52.0152 PM
+[ReportManager] File Action "DoesFileExist" successfully performed. With the following test data "File Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @27-06-2023 15:05:52.0154 PM
+[ReportManager] File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/RegisterUserTestData.json"". @27-06-2023 15:05:52.0155 PM
+[ReportManager] Get text "The specified email already exists" from "By.className: validation-summary-errors". @27-06-2023 15:05:52.0731 PM
+[ReportManager] Expected "email already exists", and actual "The specified email already exists" @27-06-2023 15:05:52.0731 PM
+[ReportManager] Assertion "ValidateElementAttribute" PASSED. Expected "Value Should be 'email already exists' for the 'text' attribute, element locator 'By.className: validation-summary-errors'" and Actual "The specified email already exists". Comparison Type "CONTAINS". Validation Type "POSITIVE". @27-06-2023 15:05:55.0409 PM
+[ReportManager] Assertion Passed: check that email already registered message exist @27-06-2023 15:05:55.0409 PM
+[ReportManager] Successfully created attachment 'Screenshot - 1687871153247_registerWithExistingEmailAndPw_ValidateElementAttribute_passed' @27-06-2023 15:05:55.0409 PM
+[ReportManager] Successfully created attachment 'SHAFT Engine Logs - Current Method log: methodSetup' @27-06-2023 15:05:55.0409 PM
